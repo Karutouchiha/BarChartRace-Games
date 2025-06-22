@@ -158,6 +158,11 @@ header h1 {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 0 2.5rem 2.5rem;
+
+    div{
+        display: flex;
+        justify-content: center;
+    }
 }
 .chart-box {
     background: var(--bg-card);
