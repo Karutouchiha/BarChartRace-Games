@@ -3,132 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Videogame Sales Dashboard</title>
+    <title>Videogame Sales Dashboard</title>
 
-    <!--
-      ──────────────────────────────────────────────────────────────
-      GLOBAL DARK‑THEME STYLES  –  “Blue Tableau” Look‑and‑Feel
-      Extend / override in styles.css if needed.
-    -->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
-
-      :root {
-        /* Brand palette */
-        --bg: #0e0c2b;
-        --bg-card: #181541;
-        --accent: #1e88ff;
-        --accent-soft: #3c38a5;
-        --text: #f6f7fc;
-        --text-muted: #a9a9c8;
-      }
-
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: "Inter", sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        overflow-x: hidden;
-      }
-
-      /* ─── Header ───────────────────────────── */
-      header {
-        padding: 1.5rem 2rem;
-        border-bottom: 3px solid var(--accent-soft);
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-      }
-      header h1 {
-        font-size: 1.75rem;
-        margin: 0;
-        letter-spacing: 0.5px;
-      }
-
-      /* ─── Facts section ────────────────────── */
-      .facts {
-        padding: 2rem 2.5rem 1rem;
-      }
-      .facts h2 {
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
-        color: var(--accent);
-      }
-      .facts-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 1.25rem;
-      }
-      .fact-card {
-        background: var(--bg-card);
-        border-radius: 12px;
-        padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-      }
-      .fact-card img {
-        width: 60px;
-        height: 60px;
-        object-fit: contain;
-        margin-bottom: 0.5rem;
-      }
-      .fact-card h3 {
-        margin: 0.25rem 0 0.5rem;
-        font-size: 1.1rem;
-        color: var(--text);
-      }
-      .fact-card p {
-        font-size: 0.85rem;
-        color: var(--text-muted);
-      }
-
-      /* ─── Controls ─────────────────────────── */
-      #controls {
-        padding: 1.5rem 2.5rem;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        align-items: center;
-      }
-      #controls label {
-        margin-right: 1rem;
-        font-size: 0.9rem;
-        user-select: none;
-      }
-      #slider-year {
-        width: 260px;
-      }
-
-      /* ─── Charts Grid ──────────────────────── */
-      .charts {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        padding: 0 2.5rem 2.5rem;
-      }
-      .chart-box {
-        background: var(--bg-card);
-        border-radius: 12px;
-        padding: 1rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-      }
-      @media (max-width: 900px) {
-        .charts {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
+    <link href="styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <!-- ╔═ Header ════════════════════════════════════════════ -->
     <header>
       <!-- minimalist „logo“ placeholder -->
       <svg
@@ -149,73 +28,67 @@
         <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
         <line x1="12" y1="22.08" x2="12" y2="12"></line>
       </svg>
-      <h1>Videogame Sales 1980 – 2016</h1>
+      <h1>Videogame Sales 1980 – 2016</h1>
     </header>
 
-    <!-- ╔═ FUN‑FACTS ══════════════════════════════════════════ -->
     <section class="facts" id="factsSection">
-      <h2>3&nbsp;<strong>Fun&nbsp;Facts</strong></h2>
+      <h2>3 <strong>Fun Facts</strong></h2>
       <div class="facts-container">
         <!-- FACT 1 -->
         <article class="fact-card">
-          <!-- Bildpfad anpassen oder via https‑URL einbinden -->
-          <img src="assets/wii_sports.jpg" alt="Wii Sports Cover" />
-          <h3>Wii Sports</h3>
+          <!-- TODO Bildpfad anpassen oder via https‑URL einbinden -->
+          <img src="assets/wii_sports.jpg" alt="Wii Sports Cover" />
+          <h3>Wii Sports</h3>
           <p>
-            Mit&nbsp;<strong>82,7&nbsp;Mio.</strong>&nbsp;verkauften Exemplaren gilt Wii Sports bis
+            Mit <strong>82,7 Mio.</strong> verkauften Exemplaren gilt Wii Sports bis
             heute als meistverkauftes Konsolenspiel aller Zeiten.
           </p>
         </article>
 
         <!-- FACT 2 -->
         <article class="fact-card">
-          <img src="assets/gta5.jpg" alt="GTA V Cover" />
-          <h3>Grand&nbsp;Theft&nbsp;Auto&nbsp;V</h3>
+          <img src="assets/gta5.jpg" alt="GTA V Cover" />
+          <h3>Grand Theft Auto V</h3>
           <p>
-            Rekordstart&nbsp;2013: <strong>1&nbsp;Mrd.&nbsp;US$ Umsatz</strong> in nur drei Tagen
-            – insgesamt über&nbsp;55 Mio. Einheiten verkauft.
+            Rekordstart 2013: <strong>1 Mrd. US$ Umsatz</strong> in nur drei Tagen
+            – insgesamt über 55 Mio. Einheiten verkauft.
           </p>
         </article>
 
         <!-- FACT 3 -->
         <article class="fact-card">
-          <img src="assets/super_mario_bros.jpg" alt="Super Mario Bros Cover" />
-          <h3>Super Mario Bros.</h3>
+          <img src="assets/super_mario_bros.jpg" alt="Super Mario Bros Cover" />
+          <h3>Super Mario Bros.</h3>
           <p>
-            Side‑Scroller‑Pionier von&nbsp;1985; gehört mit
-            <strong>45,3&nbsp;Mio.</strong> Einheiten zu den Top‑Sellern aller Zeiten und wurde
-            2020 in die „Video Game Hall of Fame“ aufgenommen.
+            Side‑Scroller‑Pionier von 1985; gehört mit
+            <strong>45,3 Mio.</strong> Einheiten zu den Top‑Sellern aller Zeiten und wurde
+            2020 in die „Video Game Hall of Fame“ aufgenommen.
           </p>
         </article>
       </div>
     </section>
 
-    <!-- ╔═ CONTROLS ══════════════════════════════════════════ -->
     <section id="controls">
       <div class="control">
-        <label for="slider-year"><strong>Year :</strong></label>
+        <label for="slider-year"><strong>Year :</strong></label>
         <input type="range" id="slider-year" min="1985" max="2016" value="1985" />
         <span id="yearLabel">1985</span>
       </div>
       <div class="control">
-        <strong>Region Filter :</strong>
+        <strong>Region Filter :</strong>
         <label
-          ><input type="checkbox" data-region="NA" checked /> North America</label
+          ><input type="checkbox" data-region="NA" checked /> North America</label
         >
-        <label><input type="checkbox" data-region="EU" checked /> Europe</label>
-        <label><input type="checkbox" data-region="JP" checked /> Japan</label>
+        <label><input type="checkbox" data-region="EU" checked />Europe</label>
+        <label><input type="checkbox" data-region="JP" checked />Japan</label>
       </div>
     </section>
 
-    <!-- ╔═ CHARTS ════════════════════════════════════════════ -->
     <section class="charts">
-      <!-- Bar‑Chart Race -->
       <div id="chart-bar-race" class="chart-box"></div>
-      <!-- Stacked Area Chart -->
       <div id="chart-stacked-area" class="chart-box"></div>
     </section>
 
-    <!-- ╔═ SCRIPT IMPORTS ════════════════════════════════════ -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <!--
       main.js übernimmt:  

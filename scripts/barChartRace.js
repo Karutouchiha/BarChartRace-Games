@@ -1,5 +1,6 @@
 import { state } from './state.js';
 
+console.log(state.data)
 export function initBarChartRace(selector) {
   const container = d3.select(selector);
   container.select('.chart-placeholder').remove(); // Platzhalter entfernen

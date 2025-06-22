@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+:root {
+    /* Brand palette */
+    --bg: #0e0c2b;
+    --bg-card: #181541;
+    --accent: #1e88ff;
+    --accent-soft: #3c38a5;
+    --text: #f6f7fc;
+    --text-muted: #a9a9c8;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    padding: 1.5rem 2rem;
+    border-bottom: 3px solid var(--accent-soft);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+header h1 {
+    font-size: 1.75rem;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* Facts section */
+.facts {
+    padding: 2rem 2.5rem 1rem;
+}
+.facts h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
+}
+.fact-card {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.fact-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+.fact-card h3 {
+    margin: 0.25rem 0 0.5rem;
+    font-size: 1.1rem;
+    color: var(--text);
+}
+.fact-card p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Controls */
+#controls {
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+#controls label {
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    user-select: none;
+}
+#slider-year {
+    width: 260px;
+}
+
+/* Charts Grid */
+.charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 0 2.5rem 2.5rem;
+}
+.chart-box {
+    background: var(--bg-card);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 900px) {
+    .charts {
+        grid-template-columns: 1fr;
+    }
+}
