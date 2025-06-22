@@ -93,7 +93,7 @@ export function initBarChartRace(selector) {
         svg.append("text")
             .attr("text-anchor", "left")
             .attr("x", 0)
-            .attr("y", svgHeight - translateY)
+            .attr("y", svgHeight - graphWidth/2)
             .style("font-size", "18px")
             .style("fill", "white")
             .text("Genre")
