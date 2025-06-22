@@ -15,7 +15,6 @@ export function initBarChartRace(selector) {
   const y = d3.scaleBand().range([0, 260]).padding(0.15);
   const color = d3.scaleOrdinal(d3.schemeTableau10);
 
-  // Optional: Achsen für bessere Lesbarkeit
   const xAxis = g.append('g').attr('class', 'x-axis').attr('transform', 'translate(0,0)');
   const yAxis = g.append('g').attr('class', 'y-axis');
 
