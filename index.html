@@ -1,0 +1,225 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+<script src="https://d3js.org/d3.v6.js"></script>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+
+<script>
+    // set the dimensions and margins of the graph
+    const margin = {top: 50, right: 30, bottom: 60, left: 150},
+        width = 550 - margin.left - margin.right,
+        height = 450 - margin.top - margin.bottom;
+
+    // append the svg object to the body of the page
+    const svg = d3.select("#my_dataviz")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    //Read the data
+    d3.csv("https://gist.githubusercontent.com/Karutouchiha/84b3fdf181f20c3c78f63e9790a65ed5/raw/a534cf034678951c7c190c2937b55307a9bc665a/studenten_oesterreich.csv",
+
+        // When reading the csv, I must format variables:
+        function (d) {
+            return {year: d.year, native_students: d.native_students, international_students: d.international_students}
+        }).then(
+        // Now I can use this dataset:
+        function (data) {
+
+            // Add X axis --> it is a date format
+            const x = d3.scaleBand()
+                .domain(data.map(d => d.year))
+                .range([0, width])
+
+            const allYears = x.domain();
+            const lastYear = allYears[allYears.length - 1];
+            const tickValues = allYears.filter((d, i) => !(i % 10));
+            if (!tickValues.includes(lastYear)) {
+                tickValues.push(lastYear);
+            }
+
+            svg.append("g")
+                .attr("transform", `translate(0,${height})`)
+                .call(d3.axisBottom(x).tickValues(tickValues));
+
+            // Add Y axis
+            const y = d3.scaleLinear()
+                .domain([0, d3.max(data, function (d) {
+                    return +d.native_students + 2000;
+                })])
+                .range([height, 0]);
+
+            svg.append("g")
+                .call(d3.axisLeft(y));
+
+            //add grid lines
+            svg.append("g")
+                .attr("class", "grid")
+                .call(d3.axisLeft(y)
+                    .tickSize(-width + 5)
+                    .tickFormat("")
+                )
+                .selectAll("line")
+                .attr("stroke", "grey")
+                .attr("stroke-opacity", 0.5)
+
+
+            // Add the native students line
+            svg.append("path")
+                .datum(data)
+                .attr("fill", "none")
+                .attr("stroke", "#003f5c")
+                .attr("stroke-width", 1.5)
+                .attr("d", d3.line()
+                    .x(function (d) {
+                        return x(d.year)
+                    })
+                    .y(function (d) {
+                        return y(d.native_students)
+                    })
+                )
+
+            // Add the international students line
+            svg.append("path")
+                .datum(data)
+                .attr("fill", "none")
+                .attr("stroke", "#ff6e54")
+                .attr("stroke-width", 1.5)
+                .attr("d", d3.line()
+                    .x(function (d) {
+                        return x(d.year)
+                    })
+                    .y(function (d) {
+                        return y(d.international_students)
+                    })
+                )
+
+            // add marker for tuition fees
+            const lineYear = "2001/02";
+
+            svg.append("line")
+                .attr("x1", x(lineYear) + x.bandwidth() / 2)
+                .attr("x2", x(lineYear) + x.bandwidth() / 2)
+                .attr("y1", 0)
+                .attr("y2", height)
+                .attr("stroke", "gray")
+                .attr("stroke-width", 2)
+                .attr("stroke-dasharray", "4,4");
+
+            //title
+            svg.append("text")
+                .attr("x", width / 2)
+                .attr("y", - (margin.top - 20))
+                .attr("text-anchor", "middle")
+                .style("font-size", "20px")
+                .text("Entwicklung der Studierendenzahlen in Österreich");
+
+            //axis titles
+            svg.append("text")
+                .attr("text-anchor", "left")
+                .attr("x", -110)
+                .attr("y", -5)
+                .style("font-size", "18px")
+                .text("Anzahl Studenten")
+
+            svg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", width - 20)
+                .attr("y", height + 40)
+                .style("font-size", "18px")
+                .text("Studienjahr")
+
+
+            //Metadata
+            svg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", width / 2)
+                .attr("y", height + 35)
+                .style("font-size", "11px")
+                .text("Datenquelle: Statistik Austria")
+
+            svg.append("text")
+                .attr("text-anchor", "middle")
+                .attr("x", width / 2)
+                .attr("y", height + 50)
+                .style("font-size", "11px")
+                .text("Grafik: Haböck Sarah")
+
+            // add legend to the graph
+            const legend = svg.append("g")
+                .attr("class", "legend")
+                .attr("transform", `translate(${10}, 20)`);
+
+            legend.append("line")
+                .attr("x1", 0)
+                .attr("x2", 20)
+                .attr("y1", 0)
+                .attr("y2", 0)
+                .attr("stroke", "gray")
+                .attr("stroke-width", 2)
+                .attr("stroke-dasharray", "4,4");
+
+            legend.append("text")
+                .attr("x", 25)
+                .attr("y", 5)
+                .text("Einführung Studiengebühr")
+                .style("font-size", "12px")
+                .attr("alignment-baseline", "middle");
+
+            legend.append("line")
+                .attr("x1", 0)
+                .attr("x2", 20)
+                .attr("y1", 20)
+                .attr("y2", 20)
+                .attr("fill", "none")
+                .attr("stroke", "#ff6e54")
+                .attr("stroke-width", 1.5)
+
+            legend.append("text")
+                .attr("x", 25)
+                .attr("y", 25)
+                .text("Ausländische Studenten")
+                .style("font-size", "12px")
+                .attr("alignment-baseline", "middle");
+
+            legend.append("line")
+                .attr("x1", 0)
+                .attr("x2", 20)
+                .attr("y1", 40)
+                .attr("y2", 40)
+                .attr("fill", "none")
+                .attr("stroke", "#003f5c")
+                .attr("stroke-width", 1.5)
+
+            legend.append("text")
+                .attr("x", 25)
+                .attr("y", 45)
+                .text("Inländische Studenten")
+                .style("font-size", "12px")
+                .attr("alignment-baseline", "middle");
+
+            legend.insert("rect", ":first-child")
+                .attr("width", 163)
+                .attr("height", 70)
+                .attr("x", -6)
+                .attr("y", -15)
+                .attr("fill", "white")
+                .attr("stroke", "#111")
+                .attr("stroke-width", 1)
+                .attr("rx", 3)
+                .attr("ry", 3);
+
+        })
+</script>
+</body>
+</html>
