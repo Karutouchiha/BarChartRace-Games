@@ -9,6 +9,10 @@ Ein interaktives Dashboard zur Visualisierung der meistverkauften Videospiel-Gen
 - **Filter:** Auswahl nach Jahr und Region.
 - **Fun Facts:** Interessante Fakten zu bekannten Spielen.
 
+## Webseite
+
+Die Visualisierung ist online verfügbar unter: [Webseiten-Ansicht ansehen](https://karutouchiha.github.io/BarChartRace-Games/)
+
 ## Installation & Nutzung
 
 1. Repository klonen:
