@@ -119,21 +119,6 @@
         border-radius: 12px;
         padding: 1rem;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-        min-height: 320px; /* <-- Sichtbarkeit sicherstellen */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-      }
-      .chart-placeholder {
-        color: var(--text-muted);
-        font-size: 1.1rem;
-        position: absolute;
-        left: 0; right: 0; top: 0; bottom: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        pointer-events: none;
       }
       @media (max-width: 900px) {
         .charts {
@@ -167,27 +152,40 @@
       <h1>Videogame Sales 1980 – 2016</h1>
     </header>
 
-    <!-- ╔═ FACT CARDS / GAME HIGHLIGHTS ═════════════════════ -->
+    <!-- ╔═ FUN‑FACTS ══════════════════════════════════════════ -->
     <section class="facts" id="factsSection">
-      <h2>3 Game Facts</h2>
+      <h2>3&nbsp;<strong>Fun&nbsp;Facts</strong></h2>
       <div class="facts-container">
         <!-- FACT 1 -->
         <article class="fact-card">
-          <img src="path/to/wii_sports.jpg" alt="Wii Sports Cover" />
+          <!-- Bildpfad anpassen oder via https‑URL einbinden -->
+          <img src="assets/wii_sports.jpg" alt="Wii Sports Cover" />
           <h3>Wii Sports</h3>
-          <p>82.7 M units – meistverkaufter Titel aller Zeiten.</p>
+          <p>
+            Mit&nbsp;<strong>82,7&nbsp;Mio.</strong>&nbsp;verkauften Exemplaren gilt Wii Sports bis
+            heute als meistverkauftes Konsolenspiel aller Zeiten.
+          </p>
         </article>
+
         <!-- FACT 2 -->
         <article class="fact-card">
-          <img src="path/to/gta5.jpg" alt="GTA V Cover" />
-          <h3>Grand Theft Auto V</h3>
-          <p>$1 B Umsatz in 3 Tagen 2013 – 55.8 M Einheiten.</p>
+          <img src="assets/gta5.jpg" alt="GTA V Cover" />
+          <h3>Grand&nbsp;Theft&nbsp;Auto&nbsp;V</h3>
+          <p>
+            Rekordstart&nbsp;2013: <strong>1&nbsp;Mrd.&nbsp;US$ Umsatz</strong> in nur drei Tagen
+            – insgesamt über&nbsp;55 Mio. Einheiten verkauft.
+          </p>
         </article>
+
         <!-- FACT 3 -->
         <article class="fact-card">
-          <img src="path/to/super_mario_bros.jpg" alt="Super Mario Bros Cover" />
-          <h3>Super Mario Bros</h3>
-          <p>Side‑Scroller‑Pionier 1985 – 45.3 M Units.</p>
+          <img src="assets/super_mario_bros.jpg" alt="Super Mario Bros Cover" />
+          <h3>Super Mario Bros.</h3>
+          <p>
+            Side‑Scroller‑Pionier von&nbsp;1985; gehört mit
+            <strong>45,3&nbsp;Mio.</strong> Einheiten zu den Top‑Sellern aller Zeiten und wurde
+            2020 in die „Video Game Hall of Fame“ aufgenommen.
+          </p>
         </article>
       </div>
     </section>
@@ -212,13 +210,9 @@
     <!-- ╔═ CHARTS ════════════════════════════════════════════ -->
     <section class="charts">
       <!-- Bar‑Chart Race -->
-      <div id="chart-bar-race" class="chart-box">
-        <div class="chart-placeholder">Bar Chart Race wird geladen…</div>
-      </div>
+      <div id="chart-bar-race" class="chart-box"></div>
       <!-- Stacked Area Chart -->
-      <div id="chart-stacked-area" class="chart-box">
-        <div class="chart-placeholder">Stacked Area Chart wird geladen…</div>
-      </div>
+      <div id="chart-stacked-area" class="chart-box"></div>
     </section>
 
     <!-- ╔═ SCRIPT IMPORTS ════════════════════════════════════ -->
