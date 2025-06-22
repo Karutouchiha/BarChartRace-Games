@@ -1,225 +1,242 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Videogame Sales Dashboard</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-</head>
-<body>
-<script src="https://d3js.org/d3.v6.js"></script>
+    <!--
+      ──────────────────────────────────────────────────────────────
+      GLOBAL DARK‑THEME STYLES  –  “Blue Tableau” Look‑and‑Feel
+      Extend / override in styles.css if needed.
+    -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
 
-<!-- Create a div where the graph will take place -->
-<div id="my_dataviz"></div>
+      :root {
+        /* Brand palette */
+        --bg: #0e0c2b;
+        --bg-card: #181541;
+        --accent: #1e88ff;
+        --accent-soft: #3c38a5;
+        --text: #f6f7fc;
+        --text-muted: #a9a9c8;
+      }
 
-<script>
-    // set the dimensions and margins of the graph
-    const margin = {top: 50, right: 30, bottom: 60, left: 150},
-        width = 550 - margin.left - margin.right,
-        height = 450 - margin.top - margin.bottom;
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        overflow-x: hidden;
+      }
 
-    // append the svg object to the body of the page
-    const svg = d3.select("#my_dataviz")
-        .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", `translate(${margin.left},${margin.top})`);
+      /* ─── Header ───────────────────────────── */
+      header {
+        padding: 1.5rem 2rem;
+        border-bottom: 3px solid var(--accent-soft);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      header h1 {
+        font-size: 1.75rem;
+        margin: 0;
+        letter-spacing: 0.5px;
+      }
 
-    //Read the data
-    d3.csv("https://gist.githubusercontent.com/Karutouchiha/84b3fdf181f20c3c78f63e9790a65ed5/raw/a534cf034678951c7c190c2937b55307a9bc665a/studenten_oesterreich.csv",
+      /* ─── Facts section ────────────────────── */
+      .facts {
+        padding: 2rem 2.5rem 1rem;
+      }
+      .facts h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: var(--accent);
+      }
+      .facts-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.25rem;
+      }
+      .fact-card {
+        background: var(--bg-card);
+        border-radius: 12px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+      }
+      .fact-card img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+        margin-bottom: 0.5rem;
+      }
+      .fact-card h3 {
+        margin: 0.25rem 0 0.5rem;
+        font-size: 1.1rem;
+        color: var(--text);
+      }
+      .fact-card p {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+      }
 
-        // When reading the csv, I must format variables:
-        function (d) {
-            return {year: d.year, native_students: d.native_students, international_students: d.international_students}
-        }).then(
-        // Now I can use this dataset:
-        function (data) {
+      /* ─── Controls ─────────────────────────── */
+      #controls {
+        padding: 1.5rem 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+      }
+      #controls label {
+        margin-right: 1rem;
+        font-size: 0.9rem;
+        user-select: none;
+      }
+      #slider-year {
+        width: 260px;
+      }
 
-            // Add X axis --> it is a date format
-            const x = d3.scaleBand()
-                .domain(data.map(d => d.year))
-                .range([0, width])
+      /* ─── Charts Grid ──────────────────────── */
+      .charts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 0 2.5rem 2.5rem;
+      }
+      .chart-box {
+        background: var(--bg-card);
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+        min-height: 320px; /* <-- Sichtbarkeit sicherstellen */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+      .chart-placeholder {
+        color: var(--text-muted);
+        font-size: 1.1rem;
+        position: absolute;
+        left: 0; right: 0; top: 0; bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+      }
+      @media (max-width: 900px) {
+        .charts {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ╔═ Header ════════════════════════════════════════════ -->
+    <header>
+      <!-- minimalist „logo“ placeholder -->
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="var(--accent)"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        role="img"
+        aria-label="Cube logo"
+      >
+        <path
+          d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.73z"
+        ></path>
+        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+      </svg>
+      <h1>Videogame Sales 1980 – 2016</h1>
+    </header>
 
-            const allYears = x.domain();
-            const lastYear = allYears[allYears.length - 1];
-            const tickValues = allYears.filter((d, i) => !(i % 10));
-            if (!tickValues.includes(lastYear)) {
-                tickValues.push(lastYear);
-            }
+    <!-- ╔═ FACT CARDS / GAME HIGHLIGHTS ═════════════════════ -->
+    <section class="facts" id="factsSection">
+      <h2>3 Game Facts</h2>
+      <div class="facts-container">
+        <!-- FACT 1 -->
+        <article class="fact-card">
+          <img src="path/to/wii_sports.jpg" alt="Wii Sports Cover" />
+          <h3>Wii Sports</h3>
+          <p>82.7 M units – meistverkaufter Titel aller Zeiten.</p>
+        </article>
+        <!-- FACT 2 -->
+        <article class="fact-card">
+          <img src="path/to/gta5.jpg" alt="GTA V Cover" />
+          <h3>Grand Theft Auto V</h3>
+          <p>$1 B Umsatz in 3 Tagen 2013 – 55.8 M Einheiten.</p>
+        </article>
+        <!-- FACT 3 -->
+        <article class="fact-card">
+          <img src="path/to/super_mario_bros.jpg" alt="Super Mario Bros Cover" />
+          <h3>Super Mario Bros</h3>
+          <p>Side‑Scroller‑Pionier 1985 – 45.3 M Units.</p>
+        </article>
+      </div>
+    </section>
 
-            svg.append("g")
-                .attr("transform", `translate(0,${height})`)
-                .call(d3.axisBottom(x).tickValues(tickValues));
+    <!-- ╔═ CONTROLS ══════════════════════════════════════════ -->
+    <section id="controls">
+      <div class="control">
+        <label for="slider-year"><strong>Year :</strong></label>
+        <input type="range" id="slider-year" min="1985" max="2016" value="1985" />
+        <span id="yearLabel">1985</span>
+      </div>
+      <div class="control">
+        <strong>Region Filter :</strong>
+        <label
+          ><input type="checkbox" data-region="NA" checked /> North America</label
+        >
+        <label><input type="checkbox" data-region="EU" checked /> Europe</label>
+        <label><input type="checkbox" data-region="JP" checked /> Japan</label>
+      </div>
+    </section>
 
-            // Add Y axis
-            const y = d3.scaleLinear()
-                .domain([0, d3.max(data, function (d) {
-                    return +d.native_students + 2000;
-                })])
-                .range([height, 0]);
+    <!-- ╔═ CHARTS ════════════════════════════════════════════ -->
+    <section class="charts">
+      <!-- Bar‑Chart Race -->
+      <div id="chart-bar-race" class="chart-box">
+        <div class="chart-placeholder">Bar Chart Race wird geladen…</div>
+      </div>
+      <!-- Stacked Area Chart -->
+      <div id="chart-stacked-area" class="chart-box">
+        <div class="chart-placeholder">Stacked Area Chart wird geladen…</div>
+      </div>
+    </section>
 
-            svg.append("g")
-                .call(d3.axisLeft(y));
+    <!-- ╔═ SCRIPT IMPORTS ════════════════════════════════════ -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!--
+      main.js übernimmt:  
+      • CSV laden  • State initialisieren  • Charts instanziieren
+      und importiert intern state.js, barChartRace.js & stackedArea.js.
+    -->
+    <script type="module" src="./scripts/main.js"></script>
 
-            //add grid lines
-            svg.append("g")
-                .attr("class", "grid")
-                .call(d3.axisLeft(y)
-                    .tickSize(-width + 5)
-                    .tickFormat("")
-                )
-                .selectAll("line")
-                .attr("stroke", "grey")
-                .attr("stroke-opacity", 0.5)
-
-
-            // Add the native students line
-            svg.append("path")
-                .datum(data)
-                .attr("fill", "none")
-                .attr("stroke", "#003f5c")
-                .attr("stroke-width", 1.5)
-                .attr("d", d3.line()
-                    .x(function (d) {
-                        return x(d.year)
-                    })
-                    .y(function (d) {
-                        return y(d.native_students)
-                    })
-                )
-
-            // Add the international students line
-            svg.append("path")
-                .datum(data)
-                .attr("fill", "none")
-                .attr("stroke", "#ff6e54")
-                .attr("stroke-width", 1.5)
-                .attr("d", d3.line()
-                    .x(function (d) {
-                        return x(d.year)
-                    })
-                    .y(function (d) {
-                        return y(d.international_students)
-                    })
-                )
-
-            // add marker for tuition fees
-            const lineYear = "2001/02";
-
-            svg.append("line")
-                .attr("x1", x(lineYear) + x.bandwidth() / 2)
-                .attr("x2", x(lineYear) + x.bandwidth() / 2)
-                .attr("y1", 0)
-                .attr("y2", height)
-                .attr("stroke", "gray")
-                .attr("stroke-width", 2)
-                .attr("stroke-dasharray", "4,4");
-
-            //title
-            svg.append("text")
-                .attr("x", width / 2)
-                .attr("y", - (margin.top - 20))
-                .attr("text-anchor", "middle")
-                .style("font-size", "20px")
-                .text("Entwicklung der Studierendenzahlen in Österreich");
-
-            //axis titles
-            svg.append("text")
-                .attr("text-anchor", "left")
-                .attr("x", -110)
-                .attr("y", -5)
-                .style("font-size", "18px")
-                .text("Anzahl Studenten")
-
-            svg.append("text")
-                .attr("text-anchor", "middle")
-                .attr("x", width - 20)
-                .attr("y", height + 40)
-                .style("font-size", "18px")
-                .text("Studienjahr")
-
-
-            //Metadata
-            svg.append("text")
-                .attr("text-anchor", "middle")
-                .attr("x", width / 2)
-                .attr("y", height + 35)
-                .style("font-size", "11px")
-                .text("Datenquelle: Statistik Austria")
-
-            svg.append("text")
-                .attr("text-anchor", "middle")
-                .attr("x", width / 2)
-                .attr("y", height + 50)
-                .style("font-size", "11px")
-                .text("Grafik: Haböck Sarah")
-
-            // add legend to the graph
-            const legend = svg.append("g")
-                .attr("class", "legend")
-                .attr("transform", `translate(${10}, 20)`);
-
-            legend.append("line")
-                .attr("x1", 0)
-                .attr("x2", 20)
-                .attr("y1", 0)
-                .attr("y2", 0)
-                .attr("stroke", "gray")
-                .attr("stroke-width", 2)
-                .attr("stroke-dasharray", "4,4");
-
-            legend.append("text")
-                .attr("x", 25)
-                .attr("y", 5)
-                .text("Einführung Studiengebühr")
-                .style("font-size", "12px")
-                .attr("alignment-baseline", "middle");
-
-            legend.append("line")
-                .attr("x1", 0)
-                .attr("x2", 20)
-                .attr("y1", 20)
-                .attr("y2", 20)
-                .attr("fill", "none")
-                .attr("stroke", "#ff6e54")
-                .attr("stroke-width", 1.5)
-
-            legend.append("text")
-                .attr("x", 25)
-                .attr("y", 25)
-                .text("Ausländische Studenten")
-                .style("font-size", "12px")
-                .attr("alignment-baseline", "middle");
-
-            legend.append("line")
-                .attr("x1", 0)
-                .attr("x2", 20)
-                .attr("y1", 40)
-                .attr("y2", 40)
-                .attr("fill", "none")
-                .attr("stroke", "#003f5c")
-                .attr("stroke-width", 1.5)
-
-            legend.append("text")
-                .attr("x", 25)
-                .attr("y", 45)
-                .text("Inländische Studenten")
-                .style("font-size", "12px")
-                .attr("alignment-baseline", "middle");
-
-            legend.insert("rect", ":first-child")
-                .attr("width", 163)
-                .attr("height", 70)
-                .attr("x", -6)
-                .attr("y", -15)
-                .attr("fill", "white")
-                .attr("stroke", "#111")
-                .attr("stroke-width", 1)
-                .attr("rx", 3)
-                .attr("ry", 3);
-
-        })
-</script>
-</body>
+    <!-- Inline helper: Sync slider label until main.js kicks in -->
+    <script>
+      const slider = document.getElementById("slider-year");
+      const label = document.getElementById("yearLabel");
+      slider.addEventListener("input", () => {
+        label.textContent = slider.value;
+      });
+    </script>
+  </body>
 </html>
