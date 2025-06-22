@@ -37,6 +37,64 @@ header h1 {
     letter-spacing: 0.5px;
 }
 
+.hero {
+  position: relative;
+  padding: 2.5rem 2rem 3rem;
+  background: linear-gradient(135deg, #130e45 0%, #0e0c2b 100%);
+  border-bottom: 3px solid var(--accent-soft);
+  overflow: hidden;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: .8rem;
+}
+
+.logo {
+  width: 38px;
+  height: 38px;
+  stroke: var(--accent);
+  fill: transparent;
+}
+
+.brand-text {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  letter-spacing: .04em;
+  color: var(--accent);
+}
+
+.hero h1 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  line-height: 1.25;
+  margin: 0;
+}
+
+.hero h1 small {
+  display: block;
+  margin-top: .5rem;
+  font-size: .55em;
+  color: var(--text-muted);
+  letter-spacing: .03em;
+  font-weight: 400;
+}
+
+.hero-shapes {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  width: 160px;
+  height: 32px;
+  stroke-width: 2;
+  fill: none;
+  stroke: var(--accent);
+  opacity: .4;
+}
+.hero-shapes > *:nth-child(even) { stroke: #f72585; }
+
 /* Facts section */
 .facts {
     padding: 2rem 2.5rem 1rem;
@@ -111,4 +169,43 @@ header h1 {
     .charts {
         grid-template-columns: 1fr;
     }
+}
+
+/* Footer */
+.site-footer{
+  position: relative;
+  background: var(--bg);
+  border-top: 3px solid var(--accent-soft);
+  padding: 1.8rem 2rem 2.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.site-footer a{
+  color: var(--accent);
+  text-decoration: none;
+}
+.site-footer a:hover{
+  text-decoration: underline;
+}
+
+.footer-content{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer-shapes{
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  width: 180px;
+  height: 32px;
+  stroke-width: 2;
+  fill: none;
+  stroke: var(--accent);
+  opacity: 0.4;
+}
+.footer-shapes > *:nth-child(even){
+  stroke: #f72585;
 }

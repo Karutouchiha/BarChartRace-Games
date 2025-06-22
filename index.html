@@ -8,61 +8,71 @@
     <link href="styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <header>
-      <!-- minimalist „logo“ placeholder -->
-      <svg
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="var(--accent)"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        role="img"
-        aria-label="Cube logo"
-      >
-        <path
-          d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.73z"
-        ></path>
-        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+
+    <header class="hero">
+      <div class="brand">
+        <!-- mini-logo as inline SVG -->
+        <svg viewBox="0 0 64 64" class="logo" aria-label="Retro Game Logo">
+          <polygon points="32 2 62 32 32 62 2 32" stroke-width="4"/>
+          <rect x="30" y="17" width="4" height="4" rx="1"/>
+          <rect x="30" y="24" width="4" height="18" rx="2"/>
+        </svg>
+        <span class="brand-text">GAME INSIGHTS</span>
+      </div>
+
+      <h1>
+        Top Videogame Genres über die Zeit<br>
+        <small>Globale und regionale Verkaufszahlen 1980 - 2016</small>
+      </h1>
+
+      <!-- shapes -->
+      <svg class="hero-shapes" viewBox="0 0 100 20" preserveAspectRatio="none">
+        <circle cx="10" cy="10" r="2"/>
+        <rect x="20" y="7" width="4" height="4" rx="1"/>
+        <polygon points="35 12 37 8 39 12"/>
+        <rect x="46" y="6" width="8" height="8" transform="rotate(45 50 10)"/>
+        <circle cx="70" cy="10" r="2"/>
+        <polygon points="84 8 88 8 86 12"/>
+        <rect x="92" y="7" width="4" height="4" rx="1"/>
       </svg>
-      <h1>Videogame Sales 1980 – 2016</h1>
     </header>
 
+    <!-- FUN FACTS -->
     <section class="facts" id="factsSection">
-      <h2>3 <strong>Fun Facts</strong></h2>
+      <h2><strong>3 Fun Facts</strong></h2>
       <div class="facts-container">
         <!-- FACT 1 -->
         <article class="fact-card">
-          <!-- TODO Bildpfad anpassen oder via https‑URL einbinden -->
           <img src="assets/wii_sports.jpg" alt="Wii Sports Cover" />
           <h3>Wii Sports</h3>
           <p>
-            Mit <strong>82,7 Mio.</strong> verkauften Exemplaren gilt Wii Sports bis
-            heute als meistverkauftes Konsolenspiel aller Zeiten.
+            <strong>Wii Sports</strong> kam 2006 auf den Markt und gilt als eines der
+            einflussreichsten Spiele des 21. Jahrhunderts. Es wurde über
+            <strong>82,7 Millionen Mal</strong> verkauft; die beiden „i“ im Logo
+            symbolisieren zwei nebeneinander spielende Personen.
           </p>
         </article>
 
         <!-- FACT 2 -->
         <article class="fact-card">
-          <img src="assets/gta5.jpg" alt="GTA V Cover" />
+          <img src="assets/gta_v.png" alt="GTA V Cover" />
           <h3>Grand Theft Auto V</h3>
           <p>
-            Rekordstart 2013: <strong>1 Mrd. US$ Umsatz</strong> in nur drei Tagen
-            – insgesamt über 55 Mio. Einheiten verkauft.
+            <strong>Grand Theft Auto V</strong> erschien 2013 und setzte bereits in den
+            ersten drei Tagen über <strong>1 Milliarde US-Dollar</strong> um. Es
+            verkaufte sich inzwischen mehr als <strong>55,8 Millionen Mal</strong> - das Spiel ist so
+            beliebt, dass Fans sich sogar krankmeldeten, um früher loszuzocken.
           </p>
         </article>
 
         <!-- FACT 3 -->
         <article class="fact-card">
-          <img src="assets/super_mario_bros.jpg" alt="Super Mario Bros Cover" />
+          <img src="assets/super_mario_bros.png" alt="Super Mario Bros Cover" />
           <h3>Super Mario Bros.</h3>
           <p>
-            Side‑Scroller‑Pionier von 1985; gehört mit
-            <strong>45,3 Mio.</strong> Einheiten zu den Top‑Sellern aller Zeiten und wurde
-            2020 in die „Video Game Hall of Fame“ aufgenommen.
+            <strong>Super Mario Bros.</strong> erschien 1985 als erster richtiger Side-Scroller und
+            verkaufte sich seither über <strong>45,3 Millionen Mal</strong>. Es wurde 2020
+            in die <em>Video Game Hall of Fame</em> des National Museum of Play aufgenommen.
           </p>
         </article>
       </div>
@@ -88,6 +98,30 @@
       <div id="chart-bar-race" class="chart-box"></div>
       <div id="chart-stacked-area" class="chart-box"></div>
     </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>
+          Datenquelle:
+          <a href="https://www.kaggle.com/datasets/gregorut/videogamesales"
+            target="_blank" rel="noopener">Video Game Sales - Kaggle</a>
+        </p>
+        <p>
+          Projekt „Informationsvisualisierung“ · FH Salzburg 2025 -
+          Design & Umsetzung: Team <strong>GAME INSIGHTS</strong> - Sarah Haböck, Christina Kollnig, Dina Alhusaini
+        </p>
+      </div>
+
+      <svg class="footer-shapes" viewBox="0 0 120 24" preserveAspectRatio="none">
+        <rect x="8"  y="6" width="6"  height="6"  rx="1"/>
+        <polygon points="25 18 27 14 29 18"/>
+        <circle cx="45" cy="12" r="3"/>
+        <rect x="60" y="4" width="10" height="10" transform="rotate(45 65 9)"/>
+        <polygon points="85 8 89 8 87 12"/>
+        <circle cx="102" cy="13" r="2"/>
+      </svg>
+    </footer>
+
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <!--
