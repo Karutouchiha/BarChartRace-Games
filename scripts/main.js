@@ -19,7 +19,8 @@ d3.csv('./data/vgsales.csv', d3.autoType).then(raw => {
         JP: d3.sum(v, d => d.JP_Sales)
       }),
       d => d.Year
-    ).map(([Year, R]) => ({ Year, ...R }))
+    ).sort((a, b) => d3.ascending(a[0], b[0]))
+     .map(([Year, R]) => ({ Year, ...R }))
   };
 
   // 2. Charts initialisieren
@@ -42,4 +43,9 @@ d3.csv('./data/vgsales.csv', d3.autoType).then(raw => {
       setState('regions', { ...state.regions });
     })
   );
+
+  const firstYearRegionEntry = state.data.byYearRegion.forEach(d=>{
+    console.log(d)
+  });
+  console.log(firstYearRegionEntry);
 });
