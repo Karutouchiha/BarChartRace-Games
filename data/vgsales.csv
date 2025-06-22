@@ -178,7 +178,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 177,Assassin's Creed II,X360,2009,Action,Ubisoft,3.1,1.56,0.08,0.51,5.27
 178,Professor Layton and the Curious Village,DS,2007,Puzzle,Nintendo,1.22,2.48,1.03,0.52,5.26
 179,Tomb Raider II,PS,1997,Action,Eidos Interactive,2.3,2.46,0.2,0.28,5.24
-180,Madden NFL 2004,PS2,N/A,Sports,Electronic Arts,4.26,0.26,0.01,0.71,5.23
+180,Madden NFL 2004,PS2,2003,Sports,Electronic Arts,4.26,0.26,0.01,0.71,5.23
 181,Dragon Quest VIII: Journey of the Cursed King,PS2,2004,Role-Playing,Square Enix,0.65,0.75,3.61,0.2,5.21
 182,Diablo III,PC,2012,Role-Playing,Activision,2.43,2.15,0,0.62,5.2
 183,Super Mario Bros. 3,GBA,2003,Platform,Nintendo,2.93,1.25,0.83,0.2,5.2
@@ -376,7 +376,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 375,Kung Fu,NES,1985,Action,Nintendo,1.64,0.38,1.42,0.06,3.5
 376,Batman: Arkham Asylum,X360,2009,Action,Eidos Interactive,2.2,0.97,0.02,0.31,3.5
 377,Clubhouse Games,DS,2006,Misc,Nintendo,0.59,1.83,0.73,0.35,3.5
-378,FIFA Soccer 2004,PS2,N/A,Sports,Electronic Arts,0.59,2.36,0.04,0.51,3.49
+378,FIFA Soccer 2004,PS2,2003,Sports,Electronic Arts,0.59,2.36,0.04,0.51,3.49
 379,Star Wars Battlefront (2015),XOne,2015,Shooter,Electronic Arts,1.94,1.22,0.02,0.31,3.49
 380,Battlefield: Bad Company 2,X360,2010,Shooter,Electronic Arts,2.09,1.02,0.04,0.32,3.48
 381,Guitar Hero: On Tour,DS,2008,Misc,Activision,2.11,1.01,0.01,0.35,3.48
@@ -430,7 +430,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 429,Enter the Matrix,PS2,2003,Action,Atari,1.78,1.12,0.09,0.19,3.18
 430,Super Mario Maker,WiiU,2015,Platform,Nintendo,1.18,0.87,0.93,0.2,3.18
 431,Fallout: New Vegas,PS3,2010,Role-Playing,Bethesda Softworks,1.52,1.08,0.1,0.47,3.17
-432,LEGO Batman: The Videogame,Wii,N/A,Action,Warner Bros. Interactive Entertainment,1.86,1.02,0,0.29,3.17
+432,LEGO Batman: The Videogame,Wii,2008,Action,Warner Bros. Interactive Entertainment,1.86,1.02,0,0.29,3.17
 433,Rhythm Heaven,DS,2008,Misc,Nintendo,0.58,0.51,1.93,0.14,3.17
 434,Ace Combat 04: Shattered Skies,PS2,2001,Simulation,Sony Computer Entertainment Europe,2.06,0.56,0.38,0.17,3.17
 435,Club Penguin: Elite Penguin Force,DS,2008,Adventure,Disney Interactive Studios,1.88,0.98,0,0.3,3.16
@@ -469,7 +469,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 468,Gears of War: Ultimate Edition,XOne,2015,Shooter,Microsoft Game Studios,2.38,0.32,0,0.31,3
 469,NBA 2K13,X360,2012,Sports,Take-Two Interactive,2.6,0.21,0.01,0.19,3
 470,Dragon Ball Z: Budokai Tenkaichi 3,PS2,2007,Fighting,Atari,1.15,0,0.76,1.09,3
-471,wwe Smackdown vs. Raw 2006,PS2,N/A,Fighting,N/A,1.57,1.02,0,0.41,3
+471,wwe Smackdown vs. Raw 2006,PS2,2005,Fighting,N/A,1.57,1.02,0,0.41,3
 472,Middle-Earth: Shadow of Mordor,PS4,2014,Action,Warner Bros. Interactive Entertainment,1.01,1.41,0.05,0.53,2.99
 473,Star Fox,SNES,1993,Shooter,Nintendo,1.61,0.51,0.8,0.07,2.99
 474,The Sims: Livin Large,PC,2000,Misc,Electronic Arts,1.67,1.18,0,0.13,2.99
@@ -606,7 +606,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 605,Pokémon Colosseum,GC,2003,Role-Playing,Nintendo,1.21,0.57,0.7,0.07,2.54
 606,Deca Sports,Wii,2008,Sports,Konami Digital Entertainment,1.13,0.87,0.29,0.25,2.54
 607,Madden NFL 09,X360,2008,Sports,Electronic Arts,2.21,0.12,0,0.2,2.54
-608,Space Invaders,2600,N/A,Shooter,Atari,2.36,0.14,0,0.03,2.53
+608,Space Invaders,2600,1978,Shooter,Atari,2.36,0.14,0,0.03,2.53
 609,Crazy Taxi,PS2,2001,Racing,Acclaim Entertainment,1.13,1.12,0.06,0.22,2.52
 610,Perfect Dark,N64,2000,Action,Nintendo,1.55,0.75,0.16,0.06,2.52
 611,Game Party,Wii,2007,Misc,Midway Games,1.5,0.78,0,0.24,2.52
@@ -623,7 +623,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 622,Pure,X360,2008,Racing,Disney Interactive Studios,1.38,0.85,0,0.25,2.48
 623,Tomb Raider: The Last Revelation,PS,1998,Action,Eidos Interactive,1.15,1.14,0.06,0.13,2.48
 624,NBA 2K13,PS3,2012,Sports,Take-Two Interactive,1.72,0.44,0.05,0.27,2.48
-625,Rock Band,X360,N/A,Misc,Electronic Arts,1.93,0.34,0,0.21,2.48
+625,Rock Band,X360,2007,Misc,Electronic Arts,1.93,0.34,0,0.21,2.48
 626,NBA 2K14,X360,2013,Sports,Take-Two Interactive,2.1,0.2,0,0.17,2.47
 627,Mario Party 4,GC,2002,Misc,Nintendo,1.13,0.36,0.92,0.07,2.47
 628,uDraw Studio,Wii,2010,Misc,THQ,1.67,0.58,0,0.2,2.46
@@ -648,10 +648,10 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 647,Tetris Plus,PS,1996,Puzzle,JVC,2.1,0.24,0,0.07,2.4
 648,Pro Wrestling,NES,1987,Fighting,Nintendo,0.77,0.18,1.42,0.03,2.4
 649,Theme Hospital,PC,1997,Strategy,Electronic Arts,2.3,0.1,0,0,2.4
-650,Frogger's Adventures: Temple of the Frog,GBA,N/A,Adventure,Konami Digital Entertainment,2.15,0.18,0,0.07,2.39
+650,Frogger's Adventures: Temple of the Frog,GBA,2001,Adventure,Konami Digital Entertainment,2.15,0.18,0,0.07,2.39
 651,Need for Speed (2015),PS4,2015,Racing,Electronic Arts,0.49,1.49,0.05,0.36,2.39
 652,Zumba Fitness,X360,2010,Sports,505 Games,1.74,0.48,0,0.18,2.39
-653,LEGO Indiana Jones: The Original Adventures,Wii,N/A,Action,LucasArts,1.54,0.63,0,0.22,2.39
+653,LEGO Indiana Jones: The Original Adventures,Wii,2008,Action,LucasArts,1.54,0.63,0,0.22,2.39
 655,Monopoly,PC,1994,Misc,Hasbro Interactive,1.49,0.81,0,0.1,2.39
 656,Batman: Arkham Origins,PS3,2013,Action,Warner Bros. Interactive Entertainment,1.07,0.87,0.04,0.4,2.39
 657,Dead Island,X360,2011,Action,Deep Silver,1.48,0.71,0,0.2,2.39
@@ -710,7 +710,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 710,Kirby: Nightmare in Dream Land,GBA,2002,Platform,Nintendo,1.22,0.1,0.91,0.04,2.27
 711,Wario Land 4,GBA,2001,Platform,Nintendo,0.9,0.73,0.54,0.09,2.26
 712,Guitar Hero III: Legends of Rock,PS3,2007,Misc,Activision,1.4,0.54,0.02,0.3,2.26
-713,Call of Duty 3,Wii,N/A,Shooter,Activision,1.19,0.84,0,0.23,2.26
+713,Call of Duty 3,Wii,2006,Shooter,Activision,1.19,0.84,0,0.23,2.26
 714,Resident Evil 4,Wii,2007,Action,Capcom,1.34,0.57,0.14,0.21,2.26
 715,Minecraft,PSV,2014,Misc,Sony Computer Entertainment Europe,0.28,0.79,0.87,0.32,2.25
 716,Onimusha 2: Samurai's Destiny,PS2,2002,Adventure,Capcom,0.62,0.44,1.06,0.13,2.25
@@ -781,7 +781,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 781,PES 2009: Pro Evolution Soccer,PS3,2008,Sports,Konami Digital Entertainment,0.11,1.34,0.4,0.26,2.11
 782,Need for Speed: Hot Pursuit 2,PS2,2002,Racing,Electronic Arts,1.68,0.31,0.02,0.09,2.11
 783,Mario Sports Mix,Wii,2010,Sports,Nintendo,0.9,0.45,0.63,0.13,2.11
-784,Rock Band,Wii,N/A,Misc,MTV Games,1.35,0.56,0,0.2,2.11
+784,Rock Band,Wii,2008,Misc,MTV Games,1.35,0.56,0,0.2,2.11
 785,Dynasty Warriors 4,PS2,2003,Action,Tecmo Koei,0.63,0.21,1.13,0.13,2.11
 786,Mortal Kombat,X360,2011,Fighting,Warner Bros. Interactive Entertainment,1.63,0.33,0,0.15,2.11
 787,Parasite Eve,PS,1998,Role-Playing,SquareSoft,0.94,0.07,1.05,0.04,2.1
@@ -1125,14 +1125,14 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 1125,ESPN NFL 2K5,XB,2004,Sports,Sega,1.54,0.02,0,0.07,1.63
 1126,Viva Pinata,X360,2006,Simulation,Microsoft Game Studios,0.45,0.96,0.02,0.2,1.63
 1127,Pikmin,GC,2001,Strategy,Nintendo,0.78,0.25,0.56,0.04,1.63
-1128,Call of Duty: Black Ops,PC,N/A,Shooter,Activision,0.58,0.81,0,0.24,1.63
+1128,Call of Duty: Black Ops,PC,2010,Shooter,Activision,0.58,0.81,0,0.24,1.63
 1129,Sonic Generations,PS3,2011,Platform,Sega,0.6,0.73,0.02,0.28,1.63
 1130,Tiger Woods PGA Tour 2004,PS2,2003,Sports,Electronic Arts,1.18,0.34,0,0.1,1.63
 1131,Ape Escape,PS,1999,Platform,Sony Computer Entertainment,0.71,0.48,0.32,0.11,1.63
 1132,NBA 2K15,X360,2014,Sports,Take-Two Interactive,1.33,0.14,0,0.15,1.63
 1133,NCAA Football 2005,PS2,2004,Sports,Electronic Arts,1.32,0.09,0,0.22,1.62
 1134,Just Cause 2,X360,2010,Action,Square Enix,0.59,0.85,0.02,0.17,1.62
-1135,Rock Band,PS3,N/A,Misc,Electronic Arts,0.99,0.41,0,0.22,1.62
+1135,Rock Band,PS3,2007,Misc,Electronic Arts,0.99,0.41,0,0.22,1.62
 1136,Tony Hawk's American Wasteland (Old all region sales),PS2,2005,Sports,Activision,0.8,0.63,0.01,0.19,1.62
 1137,Rage,X360,2011,Shooter,Bethesda Softworks,0.82,0.61,0.03,0.15,1.62
 1138,Mario Hoops 3 on 3,DS,2006,Sports,Nintendo,0.99,0.04,0.49,0.1,1.62
@@ -1302,7 +1302,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 1302,Battlefield: Bad Company,X360,2008,Shooter,Electronic Arts,0.81,0.46,0.04,0.15,1.46
 1303,Midway Arcade Treasures,PS2,2003,Misc,Midway Games,0.72,0.56,0,0.19,1.46
 1304,Wall-E,DS,2008,Platform,THQ,0.46,0.83,0,0.17,1.46
-1305,Triple Play 99,PS,N/A,Sports,N/A,0.81,0.55,0,0.1,1.46
+1305,Triple Play 99,PS,1998,Sports,N/A,0.81,0.55,0,0.1,1.46
 1306,Homefront,X360,2011,Shooter,THQ,0.83,0.48,0.02,0.12,1.46
 1307,Super Monkey Ball,GC,2001,Puzzle,Atari,0.95,0.37,0.1,0.04,1.46
 1308,Donkey Kong,2600,1981,Platform,Coleco,1.36,0.08,0,0.02,1.46
@@ -1432,7 +1432,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 1432,Yoshi's New Island,3DS,2014,Platform,Nintendo,0.47,0.51,0.28,0.09,1.36
 1433,Ryse: Son of Rome,XOne,2013,Action,Microsoft Game Studios,0.82,0.42,0,0.11,1.36
 1434,Dead to Rights,PS2,2002,Shooter,Electronic Arts,0.67,0.52,0,0.17,1.36
-1435,LEGO Harry Potter: Years 5-7,Wii,N/A,Action,Warner Bros. Interactive Entertainment,0.76,0.47,0,0.13,1.36
+1435,LEGO Harry Potter: Years 5-7,Wii,2011,Action,Warner Bros. Interactive Entertainment,0.76,0.47,0,0.13,1.36
 1436,Marvel vs. Capcom 3: Fate of Two Worlds,PS3,2011,Fighting,Capcom,0.81,0.29,0.11,0.14,1.35
 1437,Dance Dance Revolution (Japan),PS,1999,Simulation,Konami Digital Entertainment,0,0,1.26,0.09,1.35
 1438,F1 2010,PS3,2010,Racing,Codemasters,0.25,0.76,0.08,0.27,1.35
@@ -1497,7 +1497,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 1497,Madden NFL 97,PS,1996,Sports,Electronic Arts,0.73,0.5,0,0.09,1.32
 1498,Cars 2,DS,2011,Racing,Disney Interactive Studios,0.72,0.44,0.04,0.12,1.32
 1499,Skylanders Giants,X360,2012,Action,Activision,0.75,0.45,0,0.11,1.32
-1500,LEGO Batman: The Videogame,PSP,N/A,Action,Warner Bros. Interactive Entertainment,0.57,0.46,0,0.28,1.32
+1500,LEGO Batman: The Videogame,PSP,2008,Action,Warner Bros. Interactive Entertainment,0.57,0.46,0,0.28,1.32
 1501,TNN Motor Sports Hardcore 4x4,PS,1996,Racing,ASC Games,0.73,0.5,0,0.09,1.31
 1502,IHRA Drag Racing 2,PS2,2002,Racing,Bethesda Softworks,0.64,0.5,0,0.17,1.31
 1503,The Beatles: Rock Band,X360,2009,Misc,MTV Games,0.97,0.23,0,0.11,1.31
@@ -1512,7 +1512,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 1512,High School Musical 3: Senior Year DANCE!,Wii,2008,Misc,Disney Interactive Studios,0.68,0.49,0,0.13,1.31
 1513,Gold's Gym: Cardio Workout,Wii,2008,Sports,Ubisoft,1.11,0.04,0.06,0.09,1.31
 1514,Burnout 3: Takedown,XB,2004,Racing,Electronic Arts,0.84,0.43,0,0.04,1.31
-1515,Adventure,2600,N/A,Adventure,Atari,1.21,0.08,0,0.01,1.3
+1515,Adventure,2600,1980,Adventure,Atari,1.21,0.08,0,0.01,1.3
 1516,Yu-Gi-Oh! The Sacred Cards,GBA,2002,Role-Playing,Konami Digital Entertainment,0.94,0.35,0,0.02,1.3
 1517,Crysis 2,PS3,2011,Action,Electronic Arts,0.45,0.57,0.06,0.21,1.3
 1518,NBA Live 07,PS2,2006,Sports,Electronic Arts,1.07,0.04,0.02,0.17,1.3
@@ -1584,7 +1584,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 1584,SOCOM: U.S. Navy SEALs Confrontation,PS3,2008,Shooter,Sony Computer Entertainment,0.94,0.17,0.02,0.13,1.25
 1585,NBA Live 2001,PS,2000,Sports,Electronic Arts,0.7,0.47,0,0.08,1.25
 1586,Star Wars: The Force Unleashed,PS2,2008,Action,LucasArts,0.49,0,0.01,0.75,1.25
-1587,Combat,2600,N/A,Action,Atari,1.17,0.07,0,0.01,1.25
+1587,Combat,2600,1977,Action,Atari,1.17,0.07,0,0.01,1.25
 1588,Tom Clancy's Rainbow Six: Vegas,PS3,2007,Shooter,Ubisoft,0.47,0.53,0.03,0.22,1.25
 1589,Dragon Ball: Daimaou Fukkatsu,NES,1988,Role-Playing,Namco Bandai Games,0,0,1.25,0,1.25
 1590,Gegege no Kitarou 2: Youkai Gundan no Chousen,NES,1987,Role-Playing,Namco Bandai Games,0,0,1.25,0,1.25
@@ -1648,7 +1648,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 1648,Max Payne,XB,2001,Shooter,Take-Two Interactive,0.98,0.19,0,0.05,1.22
 1649,WCW Mayhem,PS,1998,Fighting,Electronic Arts,0.68,0.46,0,0.08,1.22
 1650,NBA 2K2,PS2,2002,Sports,Sega,0.59,0.46,0.01,0.15,1.22
-1651,NASCAR Thunder 2003,PS2,N/A,Racing,Unknown,0.6,0.46,0,0.16,1.22
+1651,NASCAR Thunder 2003,PS2,2002,Racing,Unknown,0.6,0.46,0,0.16,1.22
 1652,Super Street Fighter IV: 3D Edition,3DS,2011,Fighting,Capcom,0.55,0.44,0.14,0.09,1.22
 1653,Cars,PS2,2006,Racing,THQ,1.01,0.04,0,0.16,1.21
 1654,Fuzion Frenzy,XB,2001,Misc,Microsoft Game Studios,0.93,0.24,0,0.04,1.21
@@ -1696,7 +1696,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 1696,Kobe Bryant in NBA Courtside,N64,1998,Sports,Nintendo,1.02,0.13,0.04,0.01,1.19
 1697,Disney's Chip 'n Dale: Rescue Rangers,NES,1990,Platform,Capcom,0.68,0.14,0.35,0.02,1.19
 1698,The Dukes of Hazzard: Racing for Home,PS,1999,Racing,Ubisoft,0.99,0.16,0,0.04,1.19
-1699,Hitman 2: Silent Assassin,XB,N/A,Action,Eidos Interactive,0.76,0.38,0,0.05,1.19
+1699,Hitman 2: Silent Assassin,XB,2002,Action,Eidos Interactive,0.76,0.38,0,0.05,1.19
 1700,FIFA 14,XOne,2013,Sports,Electronic Arts,0.41,0.66,0,0.12,1.19
 1701,Spider-Man: The Movie,GC,2002,Action,Activision,0.86,0.27,0.01,0.04,1.19
 1702,Final Fantasy I & II: Dawn of Souls,GBA,2004,Role-Playing,Nintendo,0.64,0.24,0.29,0.02,1.19
@@ -1836,7 +1836,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 1836,GRID,PS3,2008,Racing,Codemasters,0.31,0.57,0.03,0.2,1.11
 1837,Guitar Hero Encore: Rocks The 80s,PS2,2007,Misc,RedOctane,0.92,0.04,0,0.15,1.11
 1838,Sunset Overdrive,XOne,2014,Shooter,Microsoft Game Studios,0.62,0.4,0,0.08,1.11
-1839,Rock Band,PS2,N/A,Misc,Electronic Arts,0.71,0.06,0,0.35,1.11
+1839,Rock Band,PS2,2007,Misc,Electronic Arts,0.71,0.06,0,0.35,1.11
 1840,Tom Clancy's Splinter Cell: Chaos Theory,XB,2005,Action,Ubisoft,0.68,0.38,0,0.05,1.11
 1841,Donkey Kong Jr.,NES,1983,Platform,Nintendo,0.33,0.07,0.7,0.01,1.11
 1842,Arc the Lad,PS,1995,Role-Playing,Sony Computer Entertainment,0,0,1.1,0.01,1.11
@@ -1989,7 +1989,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 1989,The Simpsons Game,X360,2007,Action,Electronic Arts,0.54,0.4,0,0.11,1.05
 1990,Guinness World Records: The Videogame,Wii,2008,Action,Warner Bros. Interactive Entertainment,0.46,0.47,0,0.11,1.04
 1991,MVP Baseball 2003,PS2,2003,Sports,Electronic Arts,0.51,0.4,0,0.13,1.04
-1992,Legacy of Kain: Soul Reaver,PS,N/A,Action,Eidos Interactive,0.58,0.4,0,0.07,1.04
+1992,Legacy of Kain: Soul Reaver,PS,1999,Action,Eidos Interactive,0.58,0.4,0,0.07,1.04
 1993,Dragon Ball Z: Budokai Tenkaichi 3,Wii,2007,Fighting,Atari,0.33,0.37,0.26,0.09,1.04
 1994,Disney Tangled,DS,2010,Action,Disney Interactive Studios,0.58,0.37,0,0.09,1.04
 1995,Tales of Destiny,PS,1997,Role-Playing,Namco Bandai Games,0.09,0.06,0.83,0.07,1.04
@@ -2018,7 +2018,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2018,Rayman Origins,PS3,2011,Platform,Ubisoft,0.33,0.51,0.01,0.18,1.03
 2019,Epic Mickey 2: The Power of Two,Wii,2012,Action,Disney Interactive Studios,0.72,0.23,0,0.08,1.03
 2020,NCAA March Madness 2004,PS2,2003,Sports,Electronic Arts,0.5,0.39,0,0.13,1.03
-2021,Donkey Kong Land III,GB,N/A,Platform,Nintendo,0.68,0.31,0,0.04,1.03
+2021,Donkey Kong Land III,GB,1997,Platform,Nintendo,0.68,0.31,0,0.04,1.03
 2022,Bomberman,NES,1985,Puzzle,Hudson Soft,0.18,0,0.85,0,1.03
 2023,The Simpsons Game,Wii,2007,Action,Electronic Arts,0.45,0.47,0,0.11,1.03
 2024,Tomb Raider,PC,1996,Action,Eidos Interactive,0.96,0.07,0,0,1.03
@@ -2085,7 +2085,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2085,NFL Fever 2002,XB,2000,Sports,Microsoft Game Studios,0.74,0.21,0,0.04,0.99
 2086,The Simpsons: Hit & Run,GC,2003,Racing,Vivendi Games,0.77,0.2,0,0.03,0.99
 2087,Littlest Pet Shop: Winter,DS,2008,Simulation,Electronic Arts,0.59,0.31,0,0.1,0.99
-2088,LEGO Harry Potter: Years 5-7,X360,N/A,Action,Warner Bros. Interactive Entertainment,0.51,0.39,0,0.09,0.99
+2088,LEGO Harry Potter: Years 5-7,X360,2011,Action,Warner Bros. Interactive Entertainment,0.51,0.39,0,0.09,0.99
 2089,Tom Clancy's Splinter Cell: Blacklist,X360,2013,Action,Ubisoft,0.57,0.34,0.01,0.08,0.99
 2090,Ace Combat X: Skies of Deception,PSP,2006,Simulation,Namco Bandai Games,0.37,0.31,0.12,0.19,0.99
 2091,NCAA Football 12,X360,2011,Sports,Electronic Arts,0.94,0,0,0.06,0.99
@@ -2112,8 +2112,8 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2112,Sonic & Sega All-Stars Racing,PS3,2010,Racing,Sega,0.36,0.46,0,0.17,0.98
 2113,Tetris 2,NES,1993,Puzzle,Nintendo,0.62,0.13,0.21,0.02,0.98
 2114,NASCAR 99,N64,1998,Racing,Electronic Arts,0.94,0.04,0,0.01,0.98
-2115,Air-Sea Battle,2600,N/A,Shooter,Atari,0.91,0.06,0,0.01,0.98
-2116,Suikoden III,PS2,N/A,Role-Playing,Unknown,0.29,0.23,0.38,0.08,0.98
+2115,Air-Sea Battle,2600,1977,Shooter,Atari,0.91,0.06,0,0.01,0.98
+2116,Suikoden III,PS2,2002,Role-Playing,Unknown,0.29,0.23,0.38,0.08,0.98
 2117,Kingdom Hearts Re:coded,DS,2010,Role-Playing,Square Enix,0.56,0.1,0.27,0.05,0.98
 2118,South Park: The Stick of Truth,PS3,2014,Role-Playing,Ubisoft,0.42,0.38,0,0.17,0.98
 2119,Driver: San Francisco,PS3,2011,Racing,Ubisoft,0.24,0.54,0.01,0.18,0.98
@@ -2133,7 +2133,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2133,Mass Effect 3,PC,2012,Role-Playing,Electronic Arts,0.4,0.44,0,0.13,0.97
 2134,NBA 2K10,X360,2009,Sports,Take-Two Interactive,0.88,0.02,0,0.08,0.97
 2135,Fire Emblem,GBA,2003,Strategy,Nintendo,0.49,0.18,0.29,0.01,0.97
-2136,Yakuza 4,PS3,N/A,Action,Sega,0.15,0.14,0.63,0.05,0.97
+2136,Yakuza 4,PS3,2010,Action,Sega,0.15,0.14,0.63,0.05,0.97
 2137,Skylanders: Spyro's Adventure,X360,2011,Action,Activision,0.53,0.35,0,0.1,0.97
 2138,Club Penguin: Game Day!,Wii,2010,Sports,Disney Interactive Studios,0.56,0.33,0,0.08,0.97
 2139,NHL 2004,PS2,2003,Sports,Electronic Arts,0.47,0.37,0,0.12,0.97
@@ -2144,7 +2144,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2144,Romancing SaGa,SNES,1992,Role-Playing,SquareSoft,0,0,0.97,0,0.97
 2145,Donkey Kong Junior,2600,1981,Platform,Atari,0.9,0.05,0,0.01,0.97
 2146,LEGO Star Wars II: The Original Trilogy,GC,2006,Action,LucasArts,0.75,0.19,0,0.03,0.97
-2147,LEGO Harry Potter: Years 5-7,PS3,N/A,Action,Warner Bros. Interactive Entertainment,0.36,0.45,0,0.16,0.97
+2147,LEGO Harry Potter: Years 5-7,PS3,2011,Action,Warner Bros. Interactive Entertainment,0.36,0.45,0,0.16,0.97
 2148,Final Fantasy X / X-2 HD Remaster,PSV,2013,Role-Playing,Square Enix,0.21,0.31,0.28,0.16,0.97
 2149,Medal of Honor: Underground,PS,2000,Shooter,Electronic Arts,0.54,0.37,0,0.06,0.97
 2150,The Sims 2,DS,2005,Simulation,Electronic Arts,0.82,0.07,0,0.07,0.96
@@ -2172,7 +2172,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2172,Naruto Shippuden: Ultimate Ninja Storm 3,PS3,2013,Fighting,Namco Bandai Games,0.32,0.33,0.15,0.15,0.96
 2173,LEGO Jurassic World,X360,2015,Action,Warner Bros. Interactive Entertainment,0.47,0.4,0,0.08,0.95
 2174,ESPN NBA 2K5,XB,2004,Sports,Global Star,0.88,0.04,0,0.04,0.95
-2175,Wheel of Fortune,PS2,N/A,Misc,Unknown,0.47,0.36,0,0.12,0.95
+2175,Wheel of Fortune,PS2,2003,Misc,Unknown,0.47,0.36,0,0.12,0.95
 2176,World Championship Poker,PS2,2004,Misc,Play It,0.8,0.03,0,0.13,0.95
 2177,Tom Clancy's Splinter Cell: Chaos Theory,PS2,2005,Action,Ubisoft,0.36,0.45,0,0.14,0.95
 2178,SpongeBob SquarePants: Battle for Bikini Bottom,GC,2003,Platform,THQ,0.74,0.19,0,0.03,0.95
@@ -2285,7 +2285,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2285,Glover,N64,1998,Platform,Hasbro Interactive,0.72,0.17,0,0.01,0.91
 2286,MX vs. ATV Reflex,PS3,2009,Racing,THQ,0.52,0.26,0,0.12,0.91
 2287,Minecraft: Story Mode,X360,2015,Adventure,Mojang,0.46,0.38,0,0.08,0.91
-2288,Namco Museum,XB,N/A,Misc,Unknown,0.77,0.11,0,0.04,0.91
+2288,Namco Museum,XB,1995,Misc,Unknown,0.77,0.11,0,0.04,0.91
 2289,Marvel: Ultimate Alliance 2,X360,2009,Role-Playing,Activision,0.68,0.15,0,0.08,0.91
 2290,Call of Duty: World at War,DS,2008,Shooter,Activision,0.57,0.26,0,0.08,0.91
 2291,Super Momotarou Dentetsu III,SNES,1994,Simulation,Hudson Soft,0,0,0.91,0,0.91
@@ -2294,7 +2294,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2294,Dragon Age: Inquisition,XOne,2014,Role-Playing,Electronic Arts,0.55,0.28,0,0.07,0.91
 2295,The Simpsons Game,PS3,2007,Action,Electronic Arts,0.38,0.37,0,0.15,0.91
 2296,Tiger Woods PGA Tour 2002,PS2,2002,Sports,Electronic Arts,0.44,0.35,0,0.12,0.9
-2297,Rhythm Heaven,Wii,N/A,Misc,Unknown,0.13,0,0.77,0.01,0.9
+2297,Rhythm Heaven,Wii,2011,Misc,Unknown,0.13,0,0.77,0.01,0.9
 2298,Mini-Yonku Shining Scorpion: Let's & Go!!,SNES,1996,Racing,ASCII Entertainment,0,0,0.9,0,0.9
 2299,MLB 2005,PS2,2004,Sports,Sony Computer Entertainment,0.44,0.35,0,0.12,0.9
 2300,SOCOM 4: U.S. Navy SEALs,PS3,2011,Shooter,Sony Computer Entertainment,0.66,0.12,0.04,0.08,0.9
@@ -2414,14 +2414,14 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2414,Darksiders II,PS3,2012,Action,THQ,0.35,0.37,0.01,0.14,0.86
 2415,Ghostbusters: The Video Game,PS3,2009,Action,Sony Computer Entertainment,0.34,0.37,0,0.15,0.86
 2416,The World Ends With You,DS,2007,Role-Playing,Square Enix,0.54,0.06,0.21,0.05,0.86
-2417,The Lord of the Rings: War in the North,PS3,N/A,Action,Warner Bros. Interactive Entertainment,0.25,0.45,0.01,0.15,0.86
+2417,The Lord of the Rings: War in the North,PS3,2011,Action,Warner Bros. Interactive Entertainment,0.25,0.45,0.01,0.15,0.86
 2418,Rocky,PS2,2002,Fighting,Rage Software,0.42,0.33,0,0.11,0.86
 2419,Dragon Quest VIII: Journey of the Cursed King,3DS,2015,Role-Playing,Square Enix,0,0,0.86,0,0.86
 2420,Ford Racing,PS,2001,Racing,Empire Interactive,0.48,0.33,0,0.06,0.86
 2421,Madden Football 64,N64,1997,Sports,Electronic Arts,0.81,0.04,0,0.01,0.86
 2422,MLB 99,PS,1998,Sports,Sony Computer Entertainment,0.48,0.32,0,0.06,0.86
 2423,Dragon Ball Z: Burst Limit,PS3,2008,Fighting,Atari,0.22,0.34,0.18,0.12,0.86
-2424,The Lord of the Rings: War in the North,X360,N/A,Action,Warner Bros. Interactive Entertainment,0.52,0.26,0,0.08,0.86
+2424,The Lord of the Rings: War in the North,X360,2011,Action,Warner Bros. Interactive Entertainment,0.52,0.26,0,0.08,0.86
 2425,The Legendary Starfy,DS,2008,Platform,Nintendo,0.61,0,0.2,0.05,0.86
 2426,2010 FIFA World Cup South Africa,X360,2010,Sports,Electronic Arts,0.32,0.43,0.02,0.09,0.86
 2427,Dynasty Warriors 4: Xtreme Legends,PS2,2003,Action,Tecmo Koei,0.17,0.13,0.51,0.04,0.86
@@ -2483,7 +2483,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2483,Ace Combat 3: Electrosphere,PS,1999,Simulation,Sony Computer Entertainment,0.22,0.15,0.4,0.05,0.83
 2484,Dynasty Warriors 2,PS2,2000,Action,THQ,0.24,0.19,0.34,0.06,0.83
 2485,Battle of Giants: Dinosaurs,DS,2008,Strategy,Ubisoft,0.38,0.37,0,0.09,0.83
-2486,Madden NFL 07,PSP,N/A,Sports,Unknown,0.77,0.03,0,0.04,0.83
+2486,Madden NFL 07,PSP,2006,Sports,Unknown,0.77,0.03,0,0.04,0.83
 2487,Lizzie McGuire 2: Lizzie Diaries,GBA,2004,Action,Disney Interactive Studios,0.6,0.22,0,0.01,0.83
 2488,Borderlands 2,PSV,2014,Shooter,Take-Two Interactive,0.43,0.21,0.01,0.19,0.83
 2489,FIFA Soccer World Championship,PS2,2000,Sports,Electronic Arts,0.27,0.21,0.28,0.07,0.83
@@ -2496,7 +2496,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2496,Sly 3: Honor Among Thieves,PS2,2005,Platform,Sony Computer Entertainment,0.69,0.03,0,0.11,0.83
 2497,The Price is Right,Wii,2008,Misc,Ubisoft,0.77,0,0,0.06,0.83
 2498,Sid Meier's Civilization Revolution,X360,2008,Strategy,Take-Two Interactive,0.58,0.17,0,0.07,0.83
-2499,MLB SlugFest 20-03,PS2,N/A,Sports,Unknown,0.41,0.32,0,0.11,0.83
+2499,MLB SlugFest 20-03,PS2,2002,Sports,Unknown,0.41,0.32,0,0.11,0.83
 2500,I Spy: Fun House,DS,2007,Puzzle,Scholastic Inc.,0.77,0,0,0.06,0.83
 2501,The Amazing Spider-Man (Console Version),PS3,2012,Action,Activision,0.31,0.37,0,0.14,0.83
 2502,Dragon Ball: Raging Blast 2,PS3,2010,Fighting,Namco Bandai Games,0.42,0.2,0.11,0.09,0.83
@@ -2527,7 +2527,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2527,Imagine: Rock Star,DS,2008,Simulation,Ubisoft,0.4,0.33,0,0.09,0.82
 2528,Shin Megami Tensei: Persona 4,PS2,2008,Role-Playing,Atlus,0.34,0.04,0.36,0.08,0.82
 2529,SingStar Vol. 2,PS3,2008,Misc,Sony Computer Entertainment,0.29,0.4,0,0.13,0.82
-2530,Shaun White Snowboarding,X360,N/A,Sports,Ubisoft,0.48,0.26,0,0.08,0.82
+2530,Shaun White Snowboarding,X360,2008,Sports,Ubisoft,0.48,0.26,0,0.08,0.82
 2531,Madden NFL 25,PS4,2013,Sports,Electronic Arts,0.62,0.13,0,0.07,0.82
 2532,Twisted Metal (2012),PS3,2012,Action,Sony Computer Entertainment,0.67,0.07,0,0.07,0.82
 2533,Dragon Warrior III,GB,2000,Role-Playing,Enix Corporation,0,0,0.81,0,0.81
@@ -2585,7 +2585,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2585,Resident Evil: Revelations,PS3,2013,Action,Capcom,0.14,0.32,0.22,0.12,0.8
 2586,Rayman Raving Rabbids 2,DS,2007,Misc,Ubisoft,0.73,0.01,0,0.06,0.8
 2587,Super Robot Taisen α,PS,2000,Strategy,Banpresto,0,0,0.75,0.05,0.8
-2588,PES 2009: Pro Evolution Soccer,PSP,N/A,Sports,Konami Digital Entertainment,0.04,0.33,0.26,0.17,0.8
+2588,PES 2009: Pro Evolution Soccer,PSP,2008,Sports,Konami Digital Entertainment,0.04,0.33,0.26,0.17,0.8
 2589,Need for Speed: Hot Pursuit 2,GC,2002,Racing,Electronic Arts,0.68,0.09,0,0.02,0.8
 2590,Star Wars: The Force Unleashed II,Wii,2010,Action,LucasArts,0.54,0.19,0,0.06,0.8
 2591,Band Hero,X360,2009,Misc,Activision,0.51,0.22,0,0.07,0.8
@@ -2775,7 +2775,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2775,Brink,PS3,2011,Shooter,Bethesda Softworks,0.29,0.32,0.01,0.12,0.74
 2776,LEGO Marvel Super Heroes,WiiU,2013,Action,Warner Bros. Interactive Entertainment,0.31,0.35,0.02,0.06,0.74
 2777,Blur,PS3,2010,Racing,Activision,0.22,0.37,0.02,0.13,0.74
-2778,Madden NFL 11,Wii,N/A,Sports,Unknown,0.7,0,0,0.05,0.74
+2778,Madden NFL 11,Wii,2010,Sports,Unknown,0.7,0,0,0.05,0.74
 2779,Namco Museum Remix,Wii,2007,Misc,Atari,0.68,0,0,0.05,0.74
 2780,Midnight Club 3: DUB Edition,XB,2005,Racing,Take-Two Interactive,0.61,0.1,0,0.03,0.74
 2781,Crysis 2,PC,2011,Action,Electronic Arts,0.16,0.45,0,0.13,0.74
@@ -2785,7 +2785,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2785,Jet Moto 3,PS,1999,Racing,Sony Computer Entertainment,0.41,0.28,0,0.05,0.74
 2786,Naruto Shippuden: Ultimate Ninja Storm Generations,PS3,2012,Fighting,Namco Bandai Games,0.27,0.25,0.14,0.08,0.74
 2787,Unreal Championship,XB,2002,Shooter,Atari,0.59,0.12,0,0.03,0.74
-2788,WarioWare: Twisted!,GBA,N/A,Puzzle,Unknown,0.16,0.06,0.5,0.02,0.74
+2788,WarioWare: Twisted!,GBA,2005,Puzzle,Unknown,0.16,0.06,0.5,0.02,0.74
 2789,Pirates of the Caribbean: At World's End,PS3,2007,Action,Disney Interactive Studios,0.17,0.41,0,0.15,0.74
 2790,Tiger Woods PGA Tour 08,PS3,2007,Sports,Electronic Arts,0.22,0.38,0,0.14,0.74
 2791,Persona 4: Arena,PS3,2012,Fighting,Atlus,0.3,0.12,0.24,0.07,0.74
@@ -2837,7 +2837,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2837,Tiger Woods PGA Tour 07,PS2,2006,Sports,Electronic Arts,0.6,0.02,0,0.1,0.72
 2838,Test Drive 6,PS,1999,Racing,Atari,0.4,0.27,0,0.05,0.72
 2839,Kouchuu Ouja Mushi King,GBA,2005,Action,Sega,0,0,0.7,0.02,0.72
-2840,LEGO Harry Potter: Years 5-7,DS,N/A,Action,Warner Bros. Interactive Entertainment,0.35,0.3,0,0.07,0.72
+2840,LEGO Harry Potter: Years 5-7,DS,2011,Action,Warner Bros. Interactive Entertainment,0.35,0.3,0,0.07,0.72
 2841,Major League Baseball 2K7,X360,2007,Sports,Spike,0.67,0,0,0.05,0.72
 2842,X-Men: Mutant Academy 2,PS,2001,Fighting,Activision,0.4,0.27,0,0.05,0.72
 2843,Terraria,X360,2013,Action,505 Games,0.35,0.31,0,0.06,0.72
@@ -2946,7 +2946,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 2946,Metal Gear Solid: Portable Ops Plus,PSP,2007,Action,Konami Digital Entertainment,0.26,0.01,0.26,0.17,0.69
 2947,Disney Tangled,Wii,2010,Action,Disney Interactive Studios,0.47,0.17,0,0.05,0.69
 2948,Shrek the Third,X360,2007,Action,Activision,0.54,0.1,0,0.06,0.69
-2949,Test Drive Unlimited 2,X360,N/A,Racing,Atari,0.3,0.32,0,0.07,0.69
+2949,Test Drive Unlimited 2,X360,2011,Racing,Atari,0.3,0.32,0,0.07,0.69
 2950,Moto Racer 2,PS,1997,Racing,Electronic Arts,0.39,0.26,0,0.05,0.69
 2951,Halo 2 Multiplayer Map Pack,XB,2005,Shooter,Microsoft Game Studios,0.54,0.13,0,0.02,0.69
 2952,Minecraft: Story Mode,PS3,2015,Adventure,Mojang,0.25,0.33,0,0.11,0.69
@@ -3048,7 +3048,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 3048,NHL 13,X360,2012,Sports,Electronic Arts,0.51,0.11,0,0.05,0.67
 3049,Borderlands: The Pre-Sequel,PS3,2014,Shooter,Take-Two Interactive,0.25,0.26,0.05,0.11,0.67
 3050,The Sims 3: High-End Loft Stuff,PC,2010,Simulation,Electronic Arts,0.01,0.53,0,0.12,0.67
-"3051,""The Chronicles of Narnia: The Lion, The Witch and The Wardrobe"",GBA,N/A,Action,Disney Interactive Studios,0.48,0.18,0,0.01,0.67"
+"3051,""The Chronicles of Narnia: The Lion, The Witch and The Wardrobe"",GBA,2005,Action,Disney Interactive Studios,0.48,0.18,0,0.01,0.67"
 3052,Zaidan Houjin Nippon Kanji Nouryoku Kentei Kyoukai Koushiki Soft: 200 Mannin no KanKen: Tokoton Kanji Nou,DS,2006,Misc,IE Institute,0,0,0.66,0,0.66
 3053,Pro Pinball: Big Race USA,PS,1999,Simulation,Take-Two Interactive,0.37,0.25,0,0.04,0.66
 3054,NFL Street,XB,2004,Sports,Electronic Arts,0.49,0.15,0,0.02,0.66
@@ -3140,7 +3140,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 3140,Crash of the Titans,PSP,2007,Action,Vivendi Games,0.25,0.25,0,0.15,0.64
 3141,Aliens: Colonial Marines,PS3,2013,Shooter,Sega,0.2,0.31,0,0.13,0.64
 3142,Crash: Twinsanity,PS2,2004,Platform,Vivendi Games,0.32,0.25,0,0.08,0.64
-3143,Test Drive Unlimited 2,PS3,N/A,Racing,Atari,0.16,0.35,0.01,0.12,0.64
+3143,Test Drive Unlimited 2,PS3,2011,Racing,Atari,0.16,0.35,0.01,0.12,0.64
 3144,Max Payne 2: The Fall of Max Payne,XB,2003,Shooter,Take-Two Interactive,0.47,0.15,0,0.02,0.64
 3145,Dragon Ball: Raging Blast 2,X360,2010,Fighting,Namco Bandai Games,0.49,0.09,0.01,0.05,0.64
 3146,GoldenEye: Rogue Agent,PS2,2004,Shooter,Electronic Arts,0.54,0.02,0,0.09,0.64
@@ -3193,7 +3193,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 3193,Sim Theme Park,PS,1999,Strategy,Electronic Arts,0.35,0.24,0,0.04,0.63
 3194,FIFA Soccer 2003,XB,2002,Sports,Electronic Arts,0.2,0.4,0,0.04,0.63
 3195,Ghostbusters: The Video Game,X360,2009,Action,Atari,0.43,0.14,0,0.06,0.63
-3196,Monster Hunter 2,PS2,N/A,Role-Playing,Capcom,0,0,0.63,0,0.63
+3196,Monster Hunter 2,PS2,2006,Role-Playing,Capcom,0,0,0.63,0,0.63
 3197,NASCAR 06: Total Team Control,PS2,2005,Racing,Electronic Arts,0.53,0.02,0,0.09,0.63
 3198,Tony Hawk's Project 8,PS3,2006,Sports,Activision,0.3,0.23,0.01,0.1,0.63
 3199,Dogz,GBA,2004,Simulation,Ubisoft,0.45,0.17,0,0.01,0.63
@@ -3216,7 +3216,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 3216,Metroid Prime: Trilogy,Wii,2009,Shooter,Nintendo,0.43,0.05,0,0.14,0.63
 3217,X-Man,2600,1982,Action,Universal Gamex,0.58,0.04,0,0.01,0.63
 "3218,""Transformers: Revenge of the Fallen (XBox 360, PS3, & PC Versions)"",X360,2009,Shooter,Activision,0.34,0.23,0,0.06,0.63"
-3219,Advance Wars: Days of Ruin,DS,N/A,Strategy,Nintendo,0.44,0.13,0,0.06,0.63
+3219,Advance Wars: Days of Ruin,DS,2008,Strategy,Nintendo,0.44,0.13,0,0.06,0.63
 3220,The Sims 3: Generations,PC,2011,Simulation,Electronic Arts,0.4,0.23,0,0,0.63
 3221,The Crew,XOne,2014,Racing,Ubisoft,0.24,0.34,0,0.05,0.63
 3222,Battle of Giants: Dragons,DS,2009,Strategy,Ubisoft,0.31,0.25,0,0.06,0.63
@@ -3237,7 +3237,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 3237,Namco Museum,GC,2002,Misc,Namco Bandai Games,0.48,0.13,0,0.02,0.63
 3238,Nobunaga no Yabou: Haouden,SNES,1993,Strategy,Tecmo Koei,0.3,0,0.32,0,0.62
 3239,Virtua Cop,SAT,1995,Shooter,Sega,0,0,0.62,0,0.62
-3240,Metal Gear Solid 2: Substance,XB,N/A,Action,Konami Digital Entertainment,0.38,0.22,0,0.03,0.62
+3240,Metal Gear Solid 2: Substance,XB,2002,Action,Konami Digital Entertainment,0.38,0.22,0,0.03,0.62
 3241,Tony Hawk's American Wasteland,XB,2005,Sports,Activision,0.4,0.2,0,0.03,0.62
 3242,WWF in Your House,PS,1996,Fighting,Acclaim Entertainment,0.35,0.24,0,0.04,0.62
 3243,Prince of Persia: The Forgotten Sands,X360,2010,Action,Ubisoft,0.3,0.26,0,0.06,0.62
@@ -3345,7 +3345,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 3345,NBA 2K8,PS2,2007,Sports,Take-Two Interactive,0.5,0.02,0,0.08,0.6
 3346,Phineas and Ferb: Across the 2nd Dimension,Wii,2011,Action,Disney Interactive Studios,0.36,0.19,0,0.05,0.6
 3347,Disney Infinity,WiiU,2013,Action,Disney Interactive Studios,0.33,0.22,0,0.05,0.6
-3348,The Golden Compass,Wii,N/A,Action,Sega,0.26,0.28,0,0.07,0.6
+3348,The Golden Compass,Wii,2007,Action,Sega,0.26,0.28,0,0.07,0.6
 3349,WarioWare D.I.Y.,DS,2009,Misc,Nintendo,0.18,0.19,0.2,0.04,0.6
 3350,Tony Hawk: RIDE,PS3,2009,Sports,Activision,0.38,0.15,0,0.08,0.6
 3351,LEGO Jurassic World,3DS,2015,Action,Warner Bros. Interactive Entertainment,0.31,0.22,0.03,0.05,0.6
@@ -3420,7 +3420,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 3420,NHL 12,PS3,2011,Sports,Electronic Arts,0.36,0.16,0,0.07,0.59
 3421,Tales of Zestiria,PS3,2015,Role-Playing,Namco Bandai Games,0.05,0.09,0.42,0.03,0.59
 3422,Silent Hill: Shattered Memories,PS2,2010,Action,Konami Digital Entertainment,0.13,0.22,0.01,0.23,0.59
-3423,Madden NFL 06,X360,N/A,Sports,Electronic Arts,0.54,0,0.01,0.03,0.59
+3423,Madden NFL 06,X360,2005,Sports,Electronic Arts,0.54,0,0.01,0.03,0.59
 3424,Skate it,Wii,2008,Sports,Electronic Arts,0.51,0.04,0,0.05,0.59
 3425,Game Party in Motion,X360,2010,Misc,Warner Bros. Interactive Entertainment,0.36,0.18,0,0.05,0.59
 3426,Barbie: Race & Ride,PS,1999,Action,Sony Computer Entertainment,0.33,0.22,0,0.04,0.59
@@ -3467,7 +3467,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 3467,FIFA: Road to  World Cup 98,N64,1997,Sports,Electronic Arts,0.15,0.39,0,0.03,0.58
 3468,World Cup 98,N64,1998,Sports,Electronic Arts,0.14,0.4,0,0.04,0.58
 3469,International Superstar Soccer '98,N64,1998,Sports,Konami Digital Entertainment,0.06,0.3,0.19,0.03,0.58
-3470,NASCAR: Dirt to Daytona,PS2,N/A,Racing,Unknown,0.28,0.22,0,0.07,0.58
+3470,NASCAR: Dirt to Daytona,PS2,2002,Racing,Unknown,0.28,0.22,0,0.07,0.58
 3471,Unreal Tournament,PS2,2000,Shooter,Infogrames,0.28,0.22,0,0.07,0.58
 3472,Digimon World 2,PS,2000,Role-Playing,Namco Bandai Games,0.23,0.16,0.16,0.04,0.58
 3473,Tales of Phantasia,PS,1998,Role-Playing,Namco Bandai Games,0,0,0.54,0.04,0.58
@@ -3500,7 +3500,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 3500,Tetris Party Deluxe,Wii,2010,Puzzle,Nintendo,0.34,0.17,0.02,0.05,0.58
 3501,NFL Blitz 2000,N64,1999,Sports,Midway Games,0.55,0.02,0,0,0.58
 3502,Ratchet & Clank: Quest for Booty,PS3,2008,Platform,Sony Computer Entertainment,0,0.53,0,0.04,0.58
-3503,Madden NFL 2002,XB,N/A,Sports,Unknown,0.53,0.02,0,0.03,0.58
+3503,Madden NFL 2002,XB,2001,Sports,Unknown,0.53,0.02,0,0.03,0.58
 3504,NCAA Football 10,PS2,2009,Sports,Electronic Arts,0.28,0.22,0,0.07,0.58
 3505,Top Spin 3,PS3,2008,Action,Take-Two Interactive,0.08,0.37,0,0.12,0.57
 3506,Shin Megami Tensei IV,3DS,2013,Role-Playing,Atlus,0.28,0,0.27,0.02,0.57
@@ -3714,7 +3714,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 3714,Manhunt 2,Wii,2007,Action,Take-Two Interactive,0.25,0.23,0,0.06,0.54
 3715,SRS: Street Racing Syndicate,PS2,2004,Racing,Namco Bandai Games,0.26,0.21,0,0.07,0.54
 3716,Despicable Me: The Game - Minion Mayhem,DS,2010,Puzzle,D3Publisher,0.42,0.09,0,0.04,0.54
-3717,Def Jam: Fight for NY,XB,N/A,Fighting,Electronic Arts,0.43,0.1,0,0.02,0.54
+3717,Def Jam: Fight for NY,XB,2004,Fighting,Electronic Arts,0.43,0.1,0,0.02,0.54
 3718,Action Force,2600,1982,Action,CPG Products,0.5,0.03,0,0.01,0.54
 3719,Gauntlet Legends,N64,1999,Action,Midway Games,0.43,0.1,0,0.01,0.54
 3720,FIFA 99,N64,1998,Sports,Electronic Arts,0.11,0.39,0,0.03,0.54
@@ -3752,7 +3752,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 3752,The Hobbit,PS2,2003,Platform,Vivendi Games,0.26,0.2,0,0.07,0.54
 3753,War of the Monsters,PS2,2003,Fighting,Sony Computer Entertainment,0.26,0.2,0,0.07,0.54
 3754,Tales of Symphonia: Dawn of the New World,Wii,2008,Role-Playing,Namco Bandai Games,0.22,0.05,0.24,0.03,0.54
-3755,NBA Street Vol. 2,GC,N/A,Sports,Electronic Arts,0.41,0.11,0,0.01,0.54
+3755,NBA Street Vol. 2,GC,2003,Sports,Electronic Arts,0.41,0.11,0,0.01,0.54
 3756,The Incredible Hulk: Ultimate Destruction,PS2,2005,Action,Vivendi Games,0.26,0.2,0,0.07,0.54
 3757,Star Wars Battlefront (2015),PC,2015,Shooter,Electronic Arts,0.13,0.37,0,0.04,0.54
 "3758,""Sakura Taisen 2 - Kimi, Shinitamou Koto Nakare"",SAT,1998,Adventure,Sega,0,0,0.53,0,0.53"
@@ -3879,7 +3879,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 3879,Way of the Samurai,PS2,2002,Action,Eidos Interactive,0.13,0.1,0.25,0.03,0.51
 3880,Dragon Age: Origins,PC,2009,Role-Playing,Electronic Arts,0,0.46,0,0.06,0.51
 3881,Naruto Shippuden: Ultimate Ninja Storm 3,X360,2013,Fighting,Namco Bandai Games,0.29,0.17,0.01,0.04,0.51
-3882,Fishing Derby,2600,N/A,Sports,Activision,0.48,0.03,0,0.01,0.51
+3882,Fishing Derby,2600,1980,Sports,Activision,0.48,0.03,0,0.01,0.51
 3883,Pac-Man Fever,PS2,2001,Misc,Sony Computer Entertainment,0.25,0.2,0,0.07,0.51
 3884,The LEGO Movie Videogame,XOne,2014,Action,Warner Bros. Interactive Entertainment,0.34,0.13,0,0.04,0.51
 3885,The 3rd Birthday,PSP,2010,Role-Playing,Square Enix,0.13,0.07,0.27,0.05,0.51
@@ -3951,7 +3951,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 3951,NHL 09,X360,2008,Sports,Electronic Arts,0.45,0.01,0,0.04,0.5
 3952,Sonic Riders,PS2,2006,Racing,Sega,0.42,0.02,0,0.07,0.5
 3953,Looney Tunes: Back in Action,PS2,2003,Platform,Warner Bros. Interactive Entertainment,0.25,0.19,0,0.06,0.5
-3954,Wet,X360,N/A,Shooter,Bethesda Softworks,0.23,0.21,0.01,0.05,0.5
+3954,Wet,X360,2009,Shooter,Bethesda Softworks,0.23,0.21,0.01,0.05,0.5
 3955,Midnight Magic,2600,1983,Action,Atari,0.47,0.03,0,0.01,0.5
 3956,Alice: Madness Returns,X360,2011,Adventure,Electronic Arts,0.27,0.15,0.04,0.04,0.5
 3957,Pro Evolution Soccer 2012,X360,2011,Action,Konami Digital Entertainment,0.1,0.34,0,0.07,0.5
@@ -4144,13 +4144,13 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 4144,World of Outlaws: Sprint Cars 2002,PS2,2002,Racing,Ignition Entertainment,0.23,0.18,0,0.06,0.48
 4145,Cars: Race-O-Rama,DS,2009,Racing,THQ,0.35,0.09,0,0.04,0.48
 4146,Emergency Heroes,Wii,2008,Racing,Ubisoft,0.15,0.27,0,0.06,0.48
-4147,Sonic the Hedgehog,PS3,N/A,Platform,N/A,0,0.48,0,0,0.48
+4147,Sonic the Hedgehog,PS3,2006,Platform,N/A,0,0.48,0,0,0.48
 4148,Fantavision,PS2,2000,Puzzle,Sony Computer Entertainment,0.14,0.11,0.19,0.04,0.47
 4149,Double Dragon,2600,1989,Action,Activision,0.45,0.02,0,0.01,0.47
 4150,Alien Trilogy,PS,1996,Shooter,Acclaim Entertainment,0.24,0.16,0.04,0.03,0.47
 4151,NBA Live 99,N64,1998,Sports,Electronic Arts,0.45,0.02,0,0,0.47
 4152,Bravely Second: End Layer,3DS,2015,Role-Playing,Nintendo,0.16,0.11,0.18,0.03,0.47
-4153,Karate,2600,N/A,Fighting,Ultravision,0.44,0.03,0,0,0.47
+4153,Karate,2600,1982,Fighting,Ultravision,0.44,0.03,0,0,0.47
 4154,Dark Sector,PS3,2008,Shooter,D3Publisher,0.23,0.16,0.01,0.07,0.47
 4155,Unreal Tournament III,X360,2008,Shooter,Midway Games,0.25,0.17,0.01,0.05,0.47
 4156,X-Men: Next Dimension,PS2,2002,Fighting,Activision,0.23,0.18,0,0.06,0.47
@@ -4198,7 +4198,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 4198,The Princess and the Frog,Wii,2009,Platform,Disney Interactive Studios,0.29,0.13,0,0.04,0.47
 4199,NBA Ballers: Phenom,PS2,2006,Sports,Midway Games,0.23,0.18,0,0.06,0.47
 4200,Need for Speed Carbon,XB,2006,Racing,Electronic Arts,0.35,0.1,0,0.02,0.47
-4201,Tiger Woods PGA Tour 07,Wii,N/A,Sports,Electronic Arts,0.43,0,0,0.04,0.47
+4201,Tiger Woods PGA Tour 07,Wii,2006,Sports,Electronic Arts,0.43,0,0,0.04,0.47
 4202,NHL 16,XOne,2015,Sports,Electronic Arts,0.37,0.05,0,0.05,0.47
 4203,FIFA 12,PC,2011,Sports,Electronic Arts,0.04,0.33,0,0.1,0.47
 4204,MTV Music Generator,PS,1999,Misc,Codemasters,0.26,0.18,0,0.03,0.47
@@ -4231,7 +4231,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 4231,Classic NES Series: Pac-Man,GBA,2004,Puzzle,Nintendo,0.25,0.09,0.12,0.01,0.46
 4232,Destroy All Humans!,XB,2005,Shooter,THQ,0.34,0.11,0,0.02,0.46
 4233,Dragon Ball Z: Collectible Card Game,GBA,2002,Misc,Infogrames,0.33,0.12,0,0.01,0.46
-4234,Circus Atari,2600,N/A,Action,Atari,0.43,0.03,0,0,0.46
+4234,Circus Atari,2600,1978,Action,Atari,0.43,0.03,0,0,0.46
 4235,Country Dance 2,Wii,2011,Misc,GameMill Entertainment,0.44,0,0,0.03,0.46
 4236,Razor Freestyle Scooter,PS,1999,Sports,Ubisoft,0.26,0.17,0,0.03,0.46
 4237,Crash of the Titans,Wii,2007,Action,Vivendi Games,0.4,0.03,0,0.04,0.46
@@ -4329,7 +4329,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 4329,Resistance: Burning Skies,PSV,2012,Shooter,Sony Computer Entertainment,0.21,0.16,0.02,0.07,0.45
 4330,NBA 2K13,Wii,2012,Sports,Take-Two Interactive,0.39,0.03,0,0.03,0.45
 4331,Dead or Alive: Dimensions,3DS,2011,Fighting,Ubisoft Annecy,0.13,0.21,0.07,0.03,0.45
-4332,The Chronicles of Riddick: Escape from Butcher Bay,XB,N/A,Shooter,Vivendi Games,0.32,0.11,0,0.02,0.45
+4332,The Chronicles of Riddick: Escape from Butcher Bay,XB,2004,Shooter,Vivendi Games,0.32,0.11,0,0.02,0.45
 4333,Brain Challenge,DS,2008,Misc,Ubisoft,0.41,0.01,0,0.03,0.45
 4334,NFL Head Coach,PS2,2006,Sports,Electronic Arts,0.38,0.01,0,0.06,0.45
 4335,Watch Dogs,PC,2014,Action,Ubisoft,0.14,0.26,0,0.05,0.45
@@ -4377,9 +4377,9 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 4377,Naruto Shippuden: Ultimate Ninja Storm Generations,X360,2012,Fighting,Namco Bandai Games,0.26,0.14,0.01,0.04,0.45
 4378,Hot Wheels: Stunt Track Challenge,GBA,2004,Racing,THQ,0.32,0.12,0,0.01,0.45
 4379,Viking: Battle for Asgard,X360,2008,Action,Sega,0.16,0.24,0,0.05,0.45
-4380,Maze Craze: A Game of Cops 'n Robbers,2600,N/A,Action,Atari,0.42,0.02,0,0,0.45
+4380,Maze Craze: A Game of Cops 'n Robbers,2600,1980,Action,Atari,0.42,0.02,0,0,0.45
 4381,Mobile Suit Gundam,PS,1995,Action,Namco Bandai Games,0,0,0.42,0.03,0.45
-4382,Silent Hill: Homecoming,X360,N/A,Action,Konami Digital Entertainment,0.25,0.16,0,0.04,0.45
+4382,Silent Hill: Homecoming,X360,2008,Action,Konami Digital Entertainment,0.25,0.16,0,0.04,0.45
 4383,SingStar Take That,PS2,2009,Misc,Sony Computer Entertainment,0,0.06,0,0.39,0.45
 4384,SOCOM: U.S. Navy SEALs Fireteam Bravo 3,PSP,2010,Shooter,Sony Computer Entertainment,0.17,0.13,0.06,0.08,0.45
 4385,Final Fantasy Collection,PS,1999,Role-Playing,Square,0,0,0.42,0.03,0.45
@@ -4468,10 +4468,10 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 4468,Barbie: Groom and Glam Pups,DS,2010,Action,THQ,0.26,0.14,0,0.04,0.44
 4469,Wario World,GC,2003,Platform,Nintendo,0.34,0.09,0,0.01,0.44
 4470,Scooby-Doo! Mystery Mayhem,GBA,2003,Action,THQ,0.31,0.12,0,0.01,0.44
-4471,Super Breakout,2600,N/A,Puzzle,Atari,0.41,0.03,0,0,0.44
+4471,Super Breakout,2600,1978,Puzzle,Atari,0.41,0.03,0,0,0.44
 4472,Taiko no Tatsujin: Doki! Shinkyoku Darake no Haru Matsuri,PS2,2003,Misc,Namco Bandai Games,0,0,0.44,0,0.44
 4473,Deer Drive,DS,2010,Sports,Mastiff,0.41,0,0,0.02,0.44
-4474,Robert Ludlum's The Bourne Conspiracy,X360,N/A,Action,Vivendi Games,0.26,0.14,0,0.04,0.44
+4474,Robert Ludlum's The Bourne Conspiracy,X360,2008,Action,Vivendi Games,0.26,0.14,0,0.04,0.44
 4475,Just Dance 4,PS3,2012,Misc,Ubisoft,0.26,0.12,0,0.06,0.44
 4476,TimeSplitters 2,GC,2002,Shooter,Eidos Interactive,0.34,0.09,0,0.01,0.44
 4477,Battlebots: Design & Destroy,GBA,2003,Action,Majesco Entertainment,0.31,0.12,0,0.01,0.44
@@ -4535,7 +4535,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 4535,Max Payne 3,PC,2012,Shooter,Take-Two Interactive,0.15,0.22,0,0.06,0.43
 4536,Petz Bunnyz,DS,2008,Simulation,Ubisoft,0.39,0.01,0,0.03,0.43
 4537,Castlevania: Portrait of Ruin,DS,2006,Platform,Konami Digital Entertainment,0.33,0.03,0.04,0.03,0.43
-4538,NHL Slapshot,Wii,N/A,Sports,Unknown,0.4,0,0,0.02,0.43
+4538,NHL Slapshot,Wii,2010,Sports,Unknown,0.4,0,0,0.02,0.43
 4539,EyeToy: AntiGrav,PS2,2004,Sports,Sony Computer Entertainment,0.36,0.01,0,0.06,0.43
 4540,FIFA 14,Wii,2013,Sports,Electronic Arts,0,0.38,0,0.05,0.43
 4541,EverQuest Online Adventures,PS2,2003,Role-Playing,Sony Online Entertainment,0.21,0.16,0,0.05,0.43
@@ -4682,7 +4682,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 4682,NFL GameDay 2004,PS2,2003,Sports,Sony Computer Entertainment,0.2,0.16,0,0.05,0.41
 4683,Scooby-Doo and the Cyber Chase,GBA,2001,Adventure,Ubisoft,0.3,0.11,0,0.01,0.41
 4684,Danganronpa: Trigger Happy Havoc,PSV,2013,Misc,Nippon Ichi Software,0.14,0.07,0.15,0.06,0.41
-4685,TERA,PC,N/A,Role-Playing,Unknown,0.24,0.12,0,0.05,0.41
+4685,TERA,PC,2011,Role-Playing,Unknown,0.24,0.12,0,0.05,0.41
 4686,Tomb Raider: The Last Revelation,PC,1998,Action,Eidos Interactive,0.41,0,0,0,0.41
 4687,pro evolution soccer 2011,PS2,2010,Sports,Konami Digital Entertainment,0.04,0.21,0.05,0.11,0.41
 4688,Sega Rally Championship 2,DC,1999,Racing,Sega,0,0,0.41,0,0.41
@@ -4790,13 +4790,13 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 4790,Tak and the Power of Juju,GC,2003,Platform,THQ,0.31,0.08,0,0.01,0.4
 "4791,""Transformers: The Game (XBox 360, PS2, PS3, Wii & PC Versions)"",PS3,2007,Action,Activision,0.32,0.04,0.01,0.04,0.4"
 4792,Sega Superstars Tennis,PS3,2008,Sports,Sega,0.13,0.2,0,0.08,0.4
-4793,LEGO Harry Potter: Years 5-7,3DS,N/A,Action,Warner Bros. Interactive Entertainment,0.18,0.19,0,0.04,0.4
+4793,LEGO Harry Potter: Years 5-7,3DS,2011,Action,Warner Bros. Interactive Entertainment,0.18,0.19,0,0.04,0.4
 4794,Dragon Quest X,WiiU,2013,Role-Playing,Square Enix,0,0,0.4,0,0.4
 4795,Wall-E,PS3,2008,Platform,THQ,0.12,0.21,0,0.08,0.4
 4796,Medarot: Kabuto / Kuwagata Version,GB,1997,Role-Playing,Imagineer,0,0,0.4,0,0.4
 4797,NBA 2K10,PS2,2009,Sports,Take-Two Interactive,0.33,0.01,0,0.05,0.4
 4798,Defender,PS2,2002,Misc,Midway Games,0.2,0.15,0,0.05,0.4
-4799,NFL GameDay 2003,PS2,N/A,Sports,Unknown,0.2,0.15,0,0.05,0.4
+4799,NFL GameDay 2003,PS2,2002,Sports,Unknown,0.2,0.15,0,0.05,0.4
 4800,WipeOut 3 The Game,Wii,2012,Action,Activision,0.38,0,0,0.03,0.4
 4801,Taiko no Tatsujin Wii: Dodon to 2 Yome!,Wii,2009,Misc,Namco Bandai Games,0,0,0.4,0,0.4
 4802,Thief (2014),PS3,2014,Action,Square Enix,0.1,0.2,0.02,0.08,0.4
@@ -4857,14 +4857,14 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 4857,Mystery Dungeon: Shiren the Wanderer,SNES,1995,Role-Playing,ChunSoft,0,0,0.4,0,0.4
 4858,Sonic Lost World,WiiU,2013,Platform,Sega,0.24,0.12,0.01,0.03,0.4
 4859,Condemned 2: Bloodshot,PS3,2008,Action,Sega,0.17,0.16,0,0.07,0.4
-4860,Silent Hill: Homecoming,PS3,N/A,Action,Konami Digital Entertainment,0.18,0.15,0,0.06,0.4
+4860,Silent Hill: Homecoming,PS3,2008,Action,Konami Digital Entertainment,0.18,0.15,0,0.06,0.4
 4861,Star Wars: Clone Wars,GC,2002,Shooter,Activision,0.31,0.08,0,0.01,0.4
 4862,NBA Live 2002,XB,2001,Sports,Electronic Arts,0.35,0.03,0,0.02,0.4
 4863,Boku no Natsuyasumi,PS,2000,Adventure,Sony Computer Entertainment,0,0,0.37,0.03,0.4
 4864,Armored Core V,PS3,2012,Simulation,Namco Bandai Games,0.09,0.04,0.24,0.02,0.4
 4865,I-Ninja,PS2,2003,Platform,Sony Computer Entertainment,0.19,0.15,0,0.05,0.4
 4866,Command & Conquer,PS,1996,Strategy,Virgin Interactive,0.22,0.15,0,0.03,0.4
-4867,Harvest Moon: Save the Homeland,PS2,N/A,Simulation,Unknown,0.19,0.15,0,0.05,0.4
+4867,Harvest Moon: Save the Homeland,PS2,2001,Simulation,Unknown,0.19,0.15,0,0.05,0.4
 4868,NBA Jam,PS3,2010,Sports,Electronic Arts,0.22,0.12,0,0.06,0.4
 4869,Mass Effect 2,PC,2010,Role-Playing,Electronic Arts,0.01,0.32,0,0.07,0.4
 4870,SD Gundam G Generation Seed,PS2,2004,Strategy,Namco Bandai Games,0,0,0.4,0,0.4
@@ -4933,7 +4933,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 4933,Custom Robo V2,N64,2000,Fighting,Nintendo,0,0,0.34,0.05,0.39
 4934,Extreme-G: XG2,N64,1998,Racing,Acclaim Entertainment,0.31,0.07,0,0,0.39
 4935,BattleTanx: Global Assault,N64,1999,Action,3DO,0.31,0.07,0,0,0.39
-4936,Robert Ludlum's The Bourne Conspiracy,PS3,N/A,Action,Vivendi Games,0.18,0.14,0,0.06,0.39
+4936,Robert Ludlum's The Bourne Conspiracy,PS3,2008,Action,Vivendi Games,0.18,0.14,0,0.06,0.39
 4937,Chibi-Robo! Plug into Adventure!,GC,2005,Adventure,Nintendo,0.23,0.06,0.09,0.01,0.39
 4938,Dawn of Discovery,PC,2009,Simulation,Ubisoft,0,0.32,0,0.07,0.39
 4939,Jampack Winter 2003 (RP-T),PS2,2003,Misc,Sony Computer Entertainment,0.19,0.15,0,0.05,0.39
@@ -5060,7 +5060,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 5060,Just Dance 2015,PS4,2014,Misc,Ubisoft,0.19,0.13,0,0.06,0.38
 5061,Madagascar: Escape 2 Africa,PS2,2008,Action,Activision,0.12,0,0,0.26,0.38
 5062,ZhuZhu Pets: Featuring The Wild Bunch,Wii,2010,Simulation,Activision,0.32,0.03,0,0.03,0.38
-5063,Hangman,2600,N/A,Puzzle,Atari,0.35,0.02,0,0,0.38
+5063,Hangman,2600,1982,Puzzle,Atari,0.35,0.02,0,0,0.38
 5064,Petz Rescue: Wildlife Vet,DS,2008,Simulation,Ubisoft,0.35,0,0,0.03,0.38
 5065,Green Day: Rock Band,Wii,2010,Misc,MTV Games,0.22,0.12,0,0.03,0.38
 5066,Gravitar,2600,1982,Action,Atari,0.35,0.02,0,0,0.38
@@ -5077,7 +5077,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 5077,Dragon Ball Z: Attack of the Saiyans,DS,2009,Role-Playing,Namco Bandai Games,0.13,0.02,0.21,0.01,0.38
 5078,Marvel Super Hero Squad,Wii,2009,Fighting,THQ,0.31,0.03,0,0.03,0.38
 5079,The House of the Dead: Overkill - Extended Cut,PS3,2011,Shooter,Sega,0.15,0.17,0,0.06,0.38
-5080,The Golden Compass,PSP,N/A,Action,Sega,0.11,0.16,0,0.1,0.38
+5080,The Golden Compass,PSP,2007,Action,Sega,0.11,0.16,0,0.1,0.38
 5081,Harry Potter and the Prisoner of Azkaban,GC,2004,Action,Electronic Arts,0.29,0.08,0,0.01,0.38
 5082,Quake 4,X360,2005,Shooter,Activision,0.32,0.03,0,0.03,0.38
 5083,Petz Rescue: Ocean Patrol,DS,2008,Adventure,Ubisoft,0.35,0,0,0.03,0.37
@@ -5161,7 +5161,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 5161,The Sims 2: Castaway,PS2,2007,Simulation,Electronic Arts,0.3,0.01,0,0.05,0.37
 5162,NCAA Football 07,PSP,2006,Sports,Electronic Arts,0.34,0,0,0.03,0.37
 5163,The Chronicles of Narnia: Prince Caspian,Wii,2008,Action,Disney Interactive Studios,0.31,0.02,0,0.03,0.36
-5164,NBA Live 2003,XB,N/A,Sports,Electronic Arts,0.31,0.04,0,0.01,0.36
+5164,NBA Live 2003,XB,2002,Sports,Electronic Arts,0.31,0.04,0,0.01,0.36
 5165,Dreamworks Madagascar Kartz,DS,2009,Racing,Activision,0.25,0.08,0,0.03,0.36
 5166,My Horse & Me,DS,2007,Sports,Atari,0.33,0,0,0.03,0.36
 5167,GoldenEye: Rogue Agent,GC,2004,Shooter,Electronic Arts,0.28,0.07,0,0.01,0.36
@@ -5170,7 +5170,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 5170,Nonomura Byoin no Hitobito,SAT,1996,Adventure,Elf,0,0,0.36,0,0.36
 5171,Tom Clancy's HAWX 2,X360,2010,Action,Ubisoft,0.24,0.09,0.01,0.03,0.36
 5172,ESPN X Games Skateboarding,PS2,2001,Sports,Konami Digital Entertainment,0.18,0.14,0,0.05,0.36
-5173,Bejeweled 3,DS,N/A,Puzzle,Unknown,0.32,0.02,0,0.03,0.36
+5173,Bejeweled 3,DS,2010,Puzzle,Unknown,0.32,0.02,0,0.03,0.36
 5174,Resident Evil Zero,PS4,2016,Action,Capcom,0.09,0.17,0.05,0.05,0.36
 5175,Super Fire ProWrestling Special,SNES,1994,Fighting,Human Entertainment,0,0,0.36,0,0.36
 5176,Yuu Yuu Hakusho,SNES,1993,Fighting,Namco Bandai Games,0,0,0.36,0,0.36
@@ -5194,8 +5194,8 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 5194,Okage: Shadow King,PS2,2001,Role-Playing,Sony Computer Entertainment,0.14,0.11,0.08,0.04,0.36
 5195,Press Your Luck 2010 Edition,Wii,2009,Misc,Ubisoft,0.33,0,0,0.03,0.36
 5196,Mobile Suit Z-Gundam,PS,1997,Action,Namco Bandai Games,0,0,0.34,0.02,0.36
-5197,Cubix Robots for Everyone: Clash 'n' Bash,GBA,N/A,Action,Unknown,0.26,0.1,0,0.01,0.36
-5198,Tropico 4,X360,N/A,Strategy,Kalypso Media,0.2,0.13,0,0.03,0.36
+5197,Cubix Robots for Everyone: Clash 'n' Bash,GBA,2002,Action,Unknown,0.26,0.1,0,0.01,0.36
+5198,Tropico 4,X360,2011,Strategy,Kalypso Media,0.2,0.13,0,0.03,0.36
 5199,Speed Racer: The Videogame,DS,2008,Racing,Warner Bros. Interactive Entertainment,0.29,0.05,0,0.03,0.36
 5200,NHL 2K10,Wii,2009,Sports,Take-Two Interactive,0.33,0.01,0,0.03,0.36
 5201,Assassin's Creed III,WiiU,2012,Action,Ubisoft,0.19,0.13,0,0.03,0.36
@@ -5239,7 +5239,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 5239,Ryu Ga Gotoku Kenzan!,PS3,2008,Adventure,Sega,0,0,0.36,0,0.36
 5240,U-Sing,Wii,2009,Misc,Mindscape,0,0.32,0,0.03,0.36
 5241,Super Robot Taisen A,GBA,2001,Strategy,Banpresto,0,0,0.35,0.01,0.36
-5242,Tomb Raider (2013),PC,N/A,Action,Square Enix,0.06,0.25,0,0.05,0.36
+5242,Tomb Raider (2013),PC,2013,Action,Square Enix,0.06,0.25,0,0.05,0.36
 5243,Chicken Shoot,Wii,2007,Action,Zoo Digital Publishing,0.33,0.01,0,0.02,0.36
 5244,Company of Heroes 2,PC,2013,Strategy,THQ,0.06,0.25,0,0.05,0.36
 5245,Defiance,PS3,2013,Shooter,Trion Worlds,0.19,0.11,0,0.05,0.36
@@ -5301,7 +5301,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 5301,SimCity Creator,DS,2008,Simulation,Electronic Arts,0.3,0.03,0,0.03,0.35
 5302,Hannah Montana: The Movie,Wii,2009,Adventure,Disney Interactive Studios,0.13,0.18,0,0.04,0.35
 5303,Angry Birds Star Wars,Wii,2013,Strategy,Activision,0.21,0.1,0,0.03,0.35
-5304,Dragon Ball Z: Budokai Tenkaichi 2 (JP sales),Wii,N/A,Action,N/A,0.15,0.05,0.14,0.01,0.35
+5304,Dragon Ball Z: Budokai Tenkaichi 2 (JP sales),Wii,2006,Action,N/A,0.15,0.05,0.14,0.01,0.35
 5305,Mega Man ZX Advent,DS,2007,Platform,Capcom,0.23,0,0.09,0.02,0.35
 5306,Jikkyou Powerful Pro Yakyuu 2000,N64,2000,Sports,Konami Digital Entertainment,0,0,0.29,0.06,0.35
 5307,Sniper: Ghost Warrior 2,PS3,2013,Shooter,City Interactive,0.05,0.19,0.03,0.07,0.35
@@ -5507,7 +5507,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 5507,GT Advance Championship Racing,GBA,2001,Racing,THQ,0.24,0.09,0,0.01,0.33
 5508,Way of the Samurai 2,PS2,2003,Action,Capcom,0.05,0.04,0.23,0.01,0.33
 5509,FIFA Street 3,PS3,2008,Sports,Electronic Arts,0.08,0.18,0,0.06,0.33
-5510,Custom Robo,N64,N/A,Role-Playing,Nintendo,0,0,0.29,0.04,0.33
+5510,Custom Robo,N64,2007,Role-Playing,Nintendo,0,0,0.29,0.04,0.33
 5511,BattleTanx,N64,1998,Action,3DO,0.26,0.06,0,0,0.33
 5512,Hatsune Miku: Project Diva Extend,PSP,2011,Misc,Sega,0,0,0.33,0,0.33
 5513,Battlestations: Pacific,X360,2009,Strategy,Eidos Interactive,0.17,0.12,0.01,0.03,0.33
@@ -5617,14 +5617,14 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 5617,Harvest Moon: Back to Nature,PS,1999,Simulation,Ubisoft,0.11,0.07,0.12,0.02,0.32
 5618,Sniper Elite 3,X360,2014,Shooter,505 Games,0.16,0.14,0,0.03,0.32
 5619,Naruto: Ultimate Ninja (JP sales),PS2,2003,Fighting,Atari,0,0,0.32,0,0.32
-5620,Final Fantasy XI,PS2,N/A,Role-Playing,Unknown,0.08,0.06,0.15,0.02,0.32
+5620,Final Fantasy XI,PS2,2007,Role-Playing,Unknown,0.08,0.06,0.15,0.02,0.32
 5621,The Settlers 7: Paths to a Kingdom,PC,2010,Strategy,Ubisoft,0,0.26,0,0.06,0.32
 "5622,""Go, Diego, Go!: Great Dinosaur Rescue"",PS2,2008,Action,Take-Two Interactive,0.16,0.12,0,0.04,0.32"
 5623,TrackMania Turbo,PS4,2016,Action,Ubisoft,0.03,0.24,0,0.05,0.32
 5624,The Biggest Loser,DS,2009,Sports,THQ,0.18,0.11,0,0.03,0.32
 5625,Minute to Win It,X360,2011,Misc,Zoo Games,0.3,0,0,0.02,0.32
 5626,Darkwatch,PS2,2005,Shooter,Ubisoft,0.16,0.12,0,0.04,0.32
-5627,Singularity,X360,N/A,Shooter,Unknown,0.24,0.05,0,0.02,0.32
+5627,Singularity,X360,2010,Shooter,Unknown,0.24,0.05,0,0.02,0.32
 5628,Dance Dance Revolution Universe,X360,2007,Simulation,Konami Digital Entertainment,0.3,0,0,0.02,0.32
 5629,SimAnimals,Wii,2009,Simulation,Electronic Arts,0.15,0.14,0,0.03,0.32
 5630,Prince of Persia: The Sands of Time,GC,2003,Action,Ubisoft,0.25,0.06,0,0.01,0.32
@@ -5656,7 +5656,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 5656,Rock Band Country Track Pack,PS2,2009,Misc,MTV Games,0.16,0.12,0,0.04,0.32
 5657,7 Wonders II,DS,2009,Puzzle,Rondomedia,0.14,0.15,0,0.03,0.32
 "5658,""Ed, Edd n Eddy: Jawbreakers!"",GBA,2002,Adventure,BAM! Entertainment,0.23,0.08,0,0.01,0.32"
-5659,Dragster,2600,N/A,Racing,Activision,0.3,0.02,0,0,0.32
+5659,Dragster,2600,1980,Racing,Activision,0.3,0.02,0,0,0.32
 5660,Frankenstein's Monster,2600,1982,Action,Data Age,0.3,0.02,0,0,0.32
 5661,Riven: The Sequel to Myst,PS,1997,Adventure,Acclaim Entertainment,0.18,0.12,0,0.02,0.32
 5662,Derby Stallion DS,DS,2008,Sports,Enterbrain,0,0,0.32,0,0.32
@@ -5668,7 +5668,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 5668,Shin Momotarou Densetsu,SNES,1993,Role-Playing,Hudson Soft,0,0,0.32,0,0.32
 5669,From TV Animation One Piece: Grand Battle! 3,PS2,2003,Fighting,Namco Bandai Games,0,0,0.32,0,0.32
 5670,Sega Smash Pack,GBA,2002,Misc,Atari,0.23,0.08,0,0.01,0.32
-5671,All-Star Baseball 2005,PS2,N/A,Sports,Unknown,0.16,0.12,0,0.04,0.32
+5671,All-Star Baseball 2005,PS2,2004,Sports,Unknown,0.16,0.12,0,0.04,0.32
 5672,The Conveni: Ano Machi wo Dokusen Seyo,PS,1997,Simulation,Human Entertainment,0,0,0.3,0.02,0.32
 5673,Shin Super Robot Taisen Special Disk,PS,1997,Strategy,Banpresto,0,0,0.3,0.02,0.32
 5674,Live A Live,SNES,1994,Role-Playing,SquareSoft,0,0,0.32,0,0.32
@@ -5768,7 +5768,7 @@ Rank,Name,Platform,Year,Genre,Publisher,NA_Sales,EU_Sales,JP_Sales,Other_Sales,G
 5768,J-League Winning Eleven 2007: Club Championship,PS2,2007,Sports,Konami Digital Entertainment,0,0,0.31,0,0.31
 5769,Shrek's Carnival Craze Party Games,Wii,2008,Misc,Activision,0.28,0,0,0.02,0.31
 5770,Harvest Moon: Magical Melody,Wii,2008,Simulation,Rising Star Games,0.25,0.04,0,0.03,0.31
-5771,Star Wars Jedi Knight II: Jedi Outcast,XB,N/A,Shooter,Activision,0.23,0.07,0,0.01,0.31
+5771,Star Wars Jedi Knight II: Jedi Outcast,XB,2002,Shooter,Activision,0.23,0.07,0,0.01,0.31
 5772,Yu-Gi-Oh! 5D's World Championship 2010 Reverse of Arcadia,DS,2010,Strategy,Konami Digital Entertainment,0.18,0.02,0.09,0.02,0.31
 5773,Mega Man Battle Network 2,GBA,2002,Action,Ubisoft,0.22,0.08,0,0.01,0.31
 5774,Little King's Story,Wii,2009,Strategy,Rising Star Games,0.15,0.11,0.02,0.02,0.31
