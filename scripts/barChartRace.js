@@ -114,7 +114,7 @@ export function initBarChartRace(selector) {
             .attr("y", svgHeight - 35)
             .style("font-size", "10px")
             .style("fill", "grey")
-            .text("Datenquelle: Statistik Austria")
+            .text("Datenquelle: Kaggle")
 
         svg.append("text")
             .attr("text-anchor", "end")
