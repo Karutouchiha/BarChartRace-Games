@@ -81,7 +81,7 @@ export function initStackedArea(selector) {
             .attr("text-anchor", "middle")
             .style("font-size", "20px")
             .style("fill", "white")
-            .text("Meist verkaufte Videospiel des Genres");
+            .text("Verkaufszahlen der Länder über die Jahre");
 
         //axis titles
         svg.append("text")
