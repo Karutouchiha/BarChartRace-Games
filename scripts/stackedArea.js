@@ -20,15 +20,17 @@ export function initStackedArea(selector) {
     const color = d3.scaleOrdinal()
         .domain(['NA', 'EU', 'JP'])
         .range(['#34c759', '#0a84ff', '#ff375f']);
-    const stack = d3.stack().keys(['NA', 'EU', 'JP']);
-
+    const stack = d3.stack()
+        .order(d3.stackOrderNone)
+        .offset(d3.stackOffsetNone);
     function draw() {
         const rows = state.data.byYearRegion
             .filter(d => d.Year >= 1985 && d.Year <= 2016);
 
         x.domain(d3.extent(rows, d => d.Year));
-        y.domain([0, d3.max(rows, d => d.NA + d.EU + d.JP)]);
+        y.domain([0, d3.max(rows, d => d3.sum(state.activeRegions, k => d[k]))]);
 
+        stack.keys(state.activeRegions)
         const series = stack(rows);
 
         const area = d3.area()
@@ -42,10 +44,18 @@ export function initStackedArea(selector) {
                 enter => enter.append('path')
                     .attr('class', 'area')
                     .attr('fill', d => color(d.key))
-                    .attr('opacity', d => state.regions[d.key] ? .85 : 0),
+                    .attr('opacity', 0)
+                    .transition().duration(200)
+                    .attr('opacity', .85),
+
                 update => update
-                    .transition().duration(400)
-                    .attr('opacity', d => state.regions[d.key] ? .85 : 0)
+                    .transition().duration(200)
+                    .attr('d', area),
+
+                exit => exit
+                    .transition().duration(200)
+                    .attr('opacity', 0)
+                    .remove()
             )
             .attr('d', area);
 
