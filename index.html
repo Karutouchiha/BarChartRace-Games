@@ -1,137 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Videogame Sales Dashboard</title>
-
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
 
-    <header class="hero">
-      <div class="brand">
-        <!-- mini-logo as inline SVG -->
-        <svg viewBox="0 0 64 64" class="logo" aria-label="Retro Game Logo">
-          <polygon points="32 2 62 32 32 62 2 32" stroke-width="4"/>
-          <rect x="30" y="17" width="4" height="4" rx="1"/>
-          <rect x="30" y="24" width="4" height="18" rx="2"/>
-        </svg>
-        <span class="brand-text">GAME INSIGHTS</span>
+    <!-- INTRO SCREEN -->
+    <section class="intro">
+      <h1>🎮 Videospiel-Zeitreise</h1>
+      <p>Eine visuelle Reise durch die erfolgreichsten Genres & Konsolen seit 1980.</p>
+      <a href="#kapitel1-section" class="scroll-down">Los geht’s ↓</a>
+    </section>
+
+<header class="hero" id="header">
+  <div class="brand" style="display: flex; align-items: center; gap: 1rem;">
+    <!-- Logo: Retro-Controller-inspiriertes Symbol -->
+    <svg
+      viewBox="0 0 64 64"
+      class="logo"
+      aria-label="Retro Game Logo"
+      width="64"
+      height="64"
+      fill="none"
+      stroke="var(--accent)"
+      stroke-width="4"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+    >
+      <polygon points="32 2 62 32 32 62 2 32" />
+      <rect x="30" y="17" width="4" height="4" rx="1" fill="var(--accent)" />
+      <rect x="30" y="24" width="4" height="18" rx="2" fill="var(--accent)" />
+    </svg>
+
+    <span class="brand-text" style="color: var(--accent); font-weight: 700; font-size: 1.75rem;">
+      GAME INSIGHTS
+    </span>
+  </div>
+
+  <div style="margin-top: 2rem; max-width: 720px;">
+    <h1 style="font-size: 2.5rem; line-height: 1.3; margin-bottom: 0.5rem;">
+      Die Evolution der Videospiel-Genres
+    </h1>
+    <p style="font-size: 1.125rem; color: var(--text-muted);">
+      Verkaufszahlen & Trends von 1980 bis 2016 – weltweit und regional.
+    </p>
+  </div>
+</header>
+
+
+    <!-- KAPITEL 1 -->
+    <section class="kapitel" id="kapitel1-section">
+      <div class="text">
+        <h2>Kapitel 1: Die goldenen Anfänge (1980 - 1990)</h2>
+        <p>
+          In den 1980er Jahren dominieren Arcade-Hits wie Pac-Man und Space Invaders.
+          Jump’n’Runs erobern die Heimkonsolen und prägen die Branche nachhaltig.
+        </p>
       </div>
+      <div id="chart-bar-race" class="grafik"></div>
+    </section>
 
-      <h1>
-        Top Videogame Genres über die Zeit<br>
-        <small>Globale und regionale Verkaufszahlen 1980 - 2016</small>
-      </h1>
+    <!-- CONTROLS -->
+    <section
+      id="controls"
+      style="
+        padding: 2rem 4rem;
+        background: var(--bg);
+        color: var(--text);
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      "
+    >
+      <div
+        class="control"
+        style="display: flex; align-items: center; gap: 0.5rem; min-width: 220px;"
+      >
+        <label for="slider-year" style="font-weight: 600;">Jahr:</label>
+        <input type="range" id="slider-year" min="1985" max="2016" value="1985" />
+        <span
+          id="yearLabel"
+          style="min-width: 3ch; text-align: center; font-family: 'Orbitron', monospace;"
+          >1985</span
+        >
+      </div>
+      <div
+        class="control"
+        style="
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          font-weight: 600;
+          flex-wrap: wrap;
+          max-width: 360px;
+        "
+      >
+        <span>Region Filter:</span>
+        <label><input type="checkbox" data-region="NA" checked /> North America</label>
+        <label><input type="checkbox" data-region="EU" checked /> Europe</label>
+        <label><input type="checkbox" data-region="JP" checked /> Japan</label>
+      </div>
+    </section>
 
-      <!-- shapes -->
-      <svg class="hero-shapes" viewBox="0 0 100 20" preserveAspectRatio="none">
-        <circle cx="10" cy="10" r="2"/>
-        <rect x="20" y="7" width="4" height="4" rx="1"/>
-        <polygon points="35 12 37 8 39 12"/>
-        <rect x="46" y="6" width="8" height="8" transform="rotate(45 50 10)"/>
-        <circle cx="70" cy="10" r="2"/>
-        <polygon points="84 8 88 8 86 12"/>
-        <rect x="92" y="7" width="4" height="4" rx="1"/>
-      </svg>
-    </header>
+    <!-- KAPITEL 2 -->
+    <section class="kapitel" id="kapitel2-section">
+      <div class="text">
+        <h2>Kapitel 2: Die 16-Bit Revolution (1990 - 2000)</h2>
+        <p>
+          Mit Super Nintendo und Sega Mega Drive entstehen komplexere Spielewelten.
+          Rollenspiele und Actiontitel gewinnen an Popularität.
+        </p>
+      </div>
+      <div id="chart-stacked-area" class="grafik"></div>
+    </section>
+
+    <!-- KAPITEL 3 -->
+    <section class="kapitel" id="kapitel3-section">
+      <div class="text">
+        <h2>Kapitel 3: Die 3D-Ära (2000 - 2010)</h2>
+        <p>
+          Die Einführung von 3D-Grafik verändert das Gameplay grundlegend. Genres wie
+          Shooter und Open-World-Spiele erobern die Welt.
+        </p>
+      </div>
+      <div id="chart-3d-era" class="grafik"></div>
+    </section>
+
+    <!-- KAPITEL 4 -->
+    <section class="kapitel" id="kapitel4-section">
+      <div class="text">
+        <h2>Kapitel 4: Moderne Konsolen & Mobile Gaming (2010 - 2016)</h2>
+        <p>
+          Mobile Games und leistungsstarke Konsolen dominieren den Markt. Multiplayer- und
+          Online-Spiele erreichen neue Höhen.
+        </p>
+      </div>
+      <div id="chart-modern" class="grafik"></div>
+    </section>
 
     <!-- FUN FACTS -->
-    <section class="facts" id="factsSection">
-      <h2><strong>3 Fun Facts</strong></h2>
-      <div class="facts-container">
-        <!-- FACT 1 -->
-        <article class="fact-card">
-          <img src="assets/wii_sports.jpg" alt="Wii Sports Cover" />
-          <h3>Wii Sports</h3>
-          <p>
-            <strong>Wii Sports</strong> kam 2006 auf den Markt und gilt als eines der
-            einflussreichsten Spiele des 21. Jahrhunderts. Es wurde über
-            <strong>82,7 Millionen Mal</strong> verkauft; die beiden „i“ im Logo
-            symbolisieren zwei nebeneinander spielende Personen.
-          </p>
-        </article>
+    <section class="highlights" id="fun-facts">
+      <h2
+        style="
+          width: 100%;
+          text-align: center;
+          margin-bottom: 2rem;
+          color: var(--accent);
+          font-size: 2rem;
+        "
+      >
+        3 Fun Facts
+      </h2>
 
-        <!-- FACT 2 -->
-        <article class="fact-card">
-          <img src="assets/gta_v.png" alt="GTA V Cover" />
-          <h3>Grand Theft Auto V</h3>
-          <p>
-            <strong>Grand Theft Auto V</strong> erschien 2013 und setzte bereits in den
-            ersten drei Tagen über <strong>1 Milliarde US-Dollar</strong> um. Es
-            verkaufte sich inzwischen mehr als <strong>55,8 Millionen Mal</strong> - das Spiel ist so
-            beliebt, dass Fans sich sogar krankmeldeten, um früher loszuzocken.
-          </p>
-        </article>
+      <article class="highlight-card">
+        <img
+          src="assets/wii_sports.jpg"
+          alt="Wii Sports Cover"
+          style="width: 100%; border-radius: 8px; margin-bottom: 1rem"
+        />
+        <h3>Wii Sports</h3>
+        <p>
+          Wii Sports kam 2006 auf den Markt und gilt als eines der einflussreichsten Spiele des
+          21. Jahrhunderts. Es wurde über 82,7 Millionen Mal verkauft...
+        </p>
+      </article>
 
-        <!-- FACT 3 -->
-        <article class="fact-card">
-          <img src="assets/super_mario_bros.png" alt="Super Mario Bros Cover" />
-          <h3>Super Mario Bros.</h3>
-          <p>
-            <strong>Super Mario Bros.</strong> erschien 1985 als erster richtiger Side-Scroller und
-            verkaufte sich seither über <strong>45,3 Millionen Mal</strong>. Es wurde 2020
-            in die <em>Video Game Hall of Fame</em> des National Museum of Play aufgenommen.
-          </p>
-        </article>
-      </div>
+      <article class="highlight-card">
+        <img
+          src="assets/gta_v.png"
+          alt="GTA V Cover"
+          style="width: 100%; border-radius: 8px; margin-bottom: 1rem"
+        />
+        <h3>Grand Theft Auto V</h3>
+        <p>
+          Grand Theft Auto V erschien 2013 und setzte bereits in den ersten drei Tagen über 1
+          Milliarde US-Dollar um...
+        </p>
+      </article>
+
+      <article class="highlight-card">
+        <img
+          src="assets/super_mario_bros.png"
+          alt="Super Mario Bros Cover"
+          style="width: 100%; border-radius: 8px; margin-bottom: 1rem"
+        />
+        <h3>Super Mario Bros.</h3>
+        <p>
+          Super Mario Bros. erschien 1985 als erster richtiger Side-Scroller und verkaufte sich
+          seither über 45,3 Millionen Mal...
+        </p>
+      </article>
     </section>
 
-    <section id="controls">
-      <div class="control">
-        <label for="slider-year"><strong>Year :</strong></label>
-        <input type="range" id="slider-year" min="1985" max="2016" value="1985" />
-        <span id="yearLabel">1985</span>
-      </div>
-      <div class="control">
-        <strong>Region Filter :</strong>
-        <label
-          ><input type="checkbox" data-region="NA" checked /> North America</label
-        >
-        <label><input type="checkbox" data-region="EU" checked />Europe</label>
-        <label><input type="checkbox" data-region="JP" checked />Japan</label>
-      </div>
-    </section>
-
-    <section class="charts">
-      <div id="chart-bar-race" class="chart-box"></div>
-      <div id="chart-stacked-area" class="chart-box"></div>
-    </section>
-
-    <footer class="site-footer">
-      <div class="footer-content">
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content" style="max-width: 900px; margin: auto;">
         <p>
           Datenquelle:
-          <a href="https://www.kaggle.com/datasets/gregorut/videogamesales"
-            target="_blank" rel="noopener">Video Game Sales - Kaggle</a>
+          <a
+            href="https://www.kaggle.com/datasets/gregorut/videogamesales"
+            target="_blank"
+            rel="noopener"
+            >Video Game Sales - Kaggle</a
+          >
         </p>
         <p>
-          Projekt „Informationsvisualisierung“ · FH Salzburg 2025 -
-          Design & Umsetzung: Team <strong>GAME INSIGHTS</strong> - Sarah Haböck, Christina Kollnig, Dina Alhusaini
+          Projekt „Informationsvisualisierung“ · FH Salzburg 2025 · Design & Umsetzung:
+          Team <strong>GAME INSIGHTS</strong> - Sarah Haböck, Christina Kollnig, Dina
+          Alhusaini
         </p>
       </div>
-
-      <svg class="footer-shapes" viewBox="0 0 120 24" preserveAspectRatio="none">
-        <rect x="8"  y="6" width="6"  height="6"  rx="1"/>
-        <polygon points="25 18 27 14 29 18"/>
-        <circle cx="45" cy="12" r="3"/>
-        <rect x="60" y="4" width="10" height="10" transform="rotate(45 65 9)"/>
-        <polygon points="85 8 89 8 87 12"/>
-        <circle cx="102" cy="13" r="2"/>
-      </svg>
     </footer>
 
-
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <!--
-      main.js übernimmt:  
-      • CSV laden  • State initialisieren  • Charts instanziieren
-      und importiert intern state.js, barChartRace.js & stackedArea.js.
-    -->
     <script type="module" src="./scripts/main.js"></script>
-
-    <!-- Inline helper: Sync slider label until main.js kicks in -->
     <script>
       const slider = document.getElementById("slider-year");
       const label = document.getElementById("yearLabel");
