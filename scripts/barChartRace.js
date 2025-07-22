@@ -1,128 +1,176 @@
-import {state} from './state.js';
 
-export function initBarChartRace(selector) {
-    const container = d3.select(selector);
-    container.select('.chart-placeholder').remove(); // Platzhalter entfernen
+// barChartRace.js
+import { state } from './state.js';
 
-    const svgWidth = 600;
-    const svgHeight = 400;
+export function initBarChartRace(selector, options = {}) {
+  let yearLabelText;
+  let replayButton;
+  let animationInterval;
 
-    const graphWidth = 370;
-    const graphHeight = 260;
+  const container = d3.select(selector);
+  container.select('.chart-placeholder').remove();
 
-    const svg = container
-        .append('svg')
-        .attr('width', svgWidth)
-        .attr('height', svgHeight);
+  const {
+    dataset = state.data.byYearGenre,
+    yearRange = null,
+    label = 'Genre' // NEU: für Plattformen oder Genres
+  } = options;
 
-    const translateX = (svgWidth - graphWidth) / 2;
-    const translateY = (svgHeight - graphHeight - 20);
+  const svgWidth = 600;
+  const svgHeight = 400;
+  const graphWidth = 370;
+  const graphHeight = 260;
 
-    const g = svg.append('g').attr('transform', 'translate(' + translateX + ',' + translateY + ')');
-    const x = d3.scaleLinear().range([0, graphWidth]);
-    const y = d3.scaleBand().range([0, graphHeight]).padding(0.15);
-    const color = d3.scaleOrdinal(d3.schemeTableau10);
+  const svg = container
+    .append('svg')
+    .attr('width', svgWidth)
+    .attr('height', svgHeight);
 
-    const xAxis = g.append('g').attr('class', 'x-axis').attr('transform', 'translate(0,0)');
-    const yAxis = g.append('g').attr('class', 'y-axis');
+  const translateX = (svgWidth - graphWidth) / 2;
+  const translateY = (svgHeight - graphHeight - 20);
 
-    function draw() {
-        const yearMap = state.data.byYearGenre;
-        const year = +state.year;
-        const rows = Array.from(yearMap.get(year) || [])
-            .map(([Genre, Sales]) => ({Genre, Sales}))
-            .sort((a, b) => d3.descending(a.Sales, b.Sales))
-            .slice(0, 5);
+  const g = svg.append('g').attr('transform', `translate(${translateX},${translateY})`);
+  const x = d3.scaleLinear().range([0, graphWidth]);
+  const y = d3.scaleBand().range([0, graphHeight]).padding(0.15);
+  const color = d3.scaleOrdinal(d3.schemeTableau10);
 
-        x.domain([0, d3.max(rows, d => d.Sales) || 1]);
-        y.domain(rows.map(d => d.Genre));
+  const xAxis = g.append('g').attr('class', 'x-axis').attr('transform', 'translate(0,0)');
+  const yAxis = g.append('g').attr('class', 'y-axis');
 
-        xAxis.transition().duration(400).call(d3.axisTop(x).ticks(5));
-        yAxis.transition().duration(400).call(d3.axisLeft(y));
+  function draw(year) {
+    const yearMap = dataset;
+    const rows = Array.from(yearMap.get(year) || [])
+      .map(([key, Sales]) => ({ key, Sales }))
+      .sort((a, b) => d3.descending(a.Sales, b.Sales))
+      .slice(0, 5);
 
-        const bars = g.selectAll('rect').data(rows, d => d.Genre);
-        bars.enter()
-            .append('rect')
-            .attr('y', d => y(d.Genre))
-            .attr('height', y.bandwidth())
-            .attr('fill', d => color(d.Genre))
-            .attr('width', 0)
-            .merge(bars)
-            .transition().duration(400)
-            .attr('width', d => x(d.Sales))
-            .attr('y', d => y(d.Genre));
-        bars.exit().remove();
+    x.domain([0, d3.max(rows, d => d.Sales) || 1]);
+    y.domain(rows.map(d => d.key));
 
-        // Zahlenwerte am Ende der Balken anzeigen
-        g.selectAll('.value')
-            .data(rows, d => d.Genre)
-            .join(
-                enter => enter.append('text')
-                    .attr('class', 'value')
-                    .attr('x', d => x(d.Sales) + 8)
-                    .attr('y', d => y(d.Genre) + y.bandwidth() / 2)
-                    .attr('dy', '0.35em')
-                    .attr('fill', '#fff')
-                    .attr('font-size', 13)
-                    .text(d => d.Sales.toFixed(1) + ' Mio'),
-                update => update.transition().duration(400)
-                    .attr('x', d => x(d.Sales) + 8)
-                    .attr('y', d => y(d.Genre) + y.bandwidth() / 2)
-                    .text(d => d.Sales.toFixed(1) + ' Mio')
-            );
+    xAxis.transition().duration(400).call(d3.axisTop(x).ticks(5));
+    yAxis.transition().duration(400).call(d3.axisLeft(y));
 
-        drawGraphInfo()
-    }
+    const bars = g.selectAll('rect').data(rows, d => d.key);
+    bars.enter()
+      .append('rect')
+      .attr('y', d => y(d.key))
+      .attr('height', y.bandwidth())
+      .attr('fill', d => color(d.key))
+      .attr('width', 0)
+      .merge(bars)
+      .transition().duration(400)
+      .attr('width', d => x(d.Sales))
+      .attr('y', d => y(d.key));
+    bars.exit().remove();
 
-    draw();
-    document.addEventListener('statechange', e => {
-        if (e.detail.k === 'year') draw();
-    });
+    g.selectAll('.value')
+      .data(rows, d => d.key)
+      .join(
+        enter => enter.append('text')
+          .attr('class', 'value')
+          .attr('x', d => x(d.Sales) + 8)
+          .attr('y', d => y(d.key) + y.bandwidth() / 2)
+          .attr('dy', '0.35em')
+          .attr('fill', '#fff')
+          .attr('font-size', 13)
+          .text(d => d.Sales.toFixed(1) + ' Mio'),
+        update => update.transition().duration(400)
+          .attr('x', d => x(d.Sales) + 8)
+          .attr('y', d => y(d.key) + y.bandwidth() / 2)
+          .text(d => d.Sales.toFixed(1) + ' Mio')
+      );
+  }
+if (yearRange) {
+  let [start, end] = yearRange;
+  let current = start;
 
-    function drawGraphInfo() {
-        //title
-        svg.append("text")
-            .attr("x", svgWidth / 2)
-            .attr("y", 30)
-            .attr("text-anchor", "middle")
-            .style("font-size", "20px")
-            .style("fill", "white")
-            .text("Beliebteste Video Genre");
+  yearLabelText = svg.append("text")
+    .attr("x", svgWidth / 2)
+    .attr("y", 70)
+    .attr("text-anchor", "middle")
+    .attr("font-size", 40)
+    .attr("fill", "#ffffff");
 
-        //axis titles
-        svg.append("text")
-            .attr("text-anchor", "left")
-            .attr("x", 0)
-            .attr("y", svgHeight - graphWidth/2)
-            .style("font-size", "18px")
-            .style("fill", "white")
-            .text("Genre")
+  function startAnimation() {
+    if (replayButton) replayButton.remove(); // Entferne alten Button
 
-        svg.append("text")
-            .attr("text-anchor", "middle")
-            .attr("x", svgWidth / 2)
-            .attr("y", translateY / 1.5)
-            .style("font-size", "18px")
-            .style("fill", "white")
-            .text("Verkaufszahlen")
+    current = start;
+    animationInterval = d3.interval(() => {
+      draw(current);
+      yearLabelText.text(current);
 
+      current++;
+      if (current > end) {
+        animationInterval.stop();
+        showReplayButton();
+      }
+    }, 1500);
+  }
 
-        //Metadata
-        svg.append("text")
-            .attr("text-anchor", "end")
-            .attr("x", svgWidth)
-            .attr("y", svgHeight - 35)
-            .style("font-size", "10px")
-            .style("fill", "grey")
-            .text("Datenquelle: Kaggle")
+  function showReplayButton() {
+    replayButton = container.append("button")
+      .text("↻ Replay")
+      .attr("class", "replay-button")
+      .style("position", "absolute")
+      .style("top", "10px")
+      .style("right", "20px")
+      .style("padding", "8px 14px")
+      .style("font-size", "16px")
+      .style("cursor", "pointer")
+      .style("background", "#444")
+      .style("color", "white")
+      .style("border", "1px solid #888")
+      .style("border-radius", "5px")
+      .on("click", () => {
+        startAnimation();
+      });
+  }
 
-        svg.append("text")
-            .attr("text-anchor", "end")
-            .attr("x", svgWidth)
-            .attr("y", svgHeight - 50)
-            .style("font-size", "10px")
-            .style("fill", "grey")
-            .text("Grafik: Haböck Sarah")
-    }
+  startAnimation();
 }
 
+
+  drawGraphInfo();
+
+  function drawGraphInfo() {
+    svg.append("text")
+      .attr("x", svgWidth / 2)
+      .attr("y", 30)
+      .attr("text-anchor", "middle")
+      .style("font-size", "20px")
+      .style("fill", "white")
+      .text(label === 'Plattform' ? "Beliebteste Plattformen" : "Beliebteste Video Genre");
+
+    svg.append("text")
+      .attr("text-anchor", "left")
+      .attr("x", 0)
+      .attr("y", svgHeight - graphWidth / 2)
+      .style("font-size", "18px")
+      .style("fill", "white")
+      .text(label);
+
+    svg.append("text")
+      .attr("text-anchor", "middle")
+      .attr("x", svgWidth / 2)
+      .attr("y", translateY / 1.5)
+      .style("font-size", "18px")
+      .style("fill", "white")
+      .text("Verkaufszahlen");
+
+    svg.append("text")
+      .attr("text-anchor", "end")
+      .attr("x", svgWidth)
+      .attr("y", svgHeight - 35)
+      .style("font-size", "10px")
+      .style("fill", "grey")
+      .text("Datenquelle: Kaggle");
+
+    svg.append("text")
+      .attr("text-anchor", "end")
+      .attr("x", svgWidth)
+      .attr("y", svgHeight - 50)
+      .style("font-size", "10px")
+      .style("fill", "grey")
+      .text("Grafik: Haböck Sarah");
+  }
+}

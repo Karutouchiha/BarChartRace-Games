@@ -1,9 +1,9 @@
+// main.js
 import { state, setState } from './state.js';
 import { initBarChartRace } from './barChartRace.js';
 import { initStackedArea } from './stackedArea.js';
 
 d3.csv('./data/vgsales.csv', d3.autoType).then(raw => {
-  // 1. Daten transformieren
   state.data = {
     byYearGenre: d3.rollup(
       raw,
@@ -20,14 +20,44 @@ d3.csv('./data/vgsales.csv', d3.autoType).then(raw => {
       }),
       d => d.Year
     ).sort((a, b) => d3.ascending(a[0], b[0]))
-     .map(([Year, R]) => ({ Year, ...R }))
+     .map(([Year, R]) => ({ Year, ...R })),
+
+    by2000sGenre: d3.rollup(
+      raw.filter(d => d.Year >= 2000 && d.Year <= 2010),
+      v => d3.sum(v, d => d.Global_Sales),
+      d => d.Year,
+      d => d.Genre
+    ),
+
+    // NEU für Kapitel 4: Plattformen 2010–2016
+    byModernPlatform: d3.rollup(
+      raw.filter(d => d.Year >= 2010 && d.Year <= 2016),
+      v => d3.sum(v, d => d.Global_Sales),
+      d => d.Year,
+      d => d.Platform
+    )
   };
 
-  // 2. Charts initialisieren
-  initBarChartRace('#chart-bar-race');
-  initStackedArea('#chart-stacked-area');
+  initBarChartRace('#chart-bar-race', {
+  dataset: state.data.byYearGenre,
+  yearRange: [1980, 1990],
+  label: 'Genre',
+  controlled: true
+});
 
-  // 3. Controls verdrahten
+  initStackedArea('#chart-stacked-area');
+  initBarChartRace('#chart-3d-era', {
+    dataset: state.data.by2000sGenre,
+    yearRange: [2000, 2010]
+  });
+
+  // NEU: Kapitel 4 BarChart mit Plattformen
+  initBarChartRace('#chart-modern-era', {
+    dataset: state.data.byModernPlatform,
+    yearRange: [2010, 2016],
+    label: 'Plattform'
+  });
+
   const sliderYear = document.getElementById('slider-year');
   const yearLabel = document.getElementById('yearLabel');
   if (sliderYear && yearLabel) {
@@ -43,9 +73,4 @@ d3.csv('./data/vgsales.csv', d3.autoType).then(raw => {
       setState('regions', { ...state.regions });
     })
   );
-
-  const firstYearRegionEntry = state.data.byYearRegion.forEach(d=>{
-    console.log(d)
-  });
-  console.log(firstYearRegionEntry);
 });
