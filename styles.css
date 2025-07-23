@@ -20,6 +20,33 @@ header {
   padding: 2rem;
 }
 
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #1a192f;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.sticky-nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.sticky-nav a:hover,
+.sticky-nav a.active {
+  background: var(--accent);
+  color: #fff;
+}
+
 body {
   font-family: 'Orbitron', sans-serif;
   background-color: var(--bg);
@@ -92,31 +119,116 @@ body {
   align-items: center;
   justify-content: center;
 }
+/* Abschnittstitel */
+.section-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--accent);
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
 
-/* Highlights */
-.highlights {
-  display: flex;
-  flex-wrap: wrap;
+/* Grid-Layout für Karten */
+.funfact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  padding: 3rem 4rem;
-  background: #1c1a2e;
+  padding: 2rem 4rem;
+  justify-items: center;
+}
+
+/* Container für Flip-Animation */
+.card-container {
+  perspective: 1200px;
+  width: 100%;
+  max-width: 320px;
+  height: 460px;
+}
+
+.card-flip {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+/* Vorder- und Rückseite */
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(145deg, #1a182e, #2a264b);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  color: var(--text);
+}
+
+.front img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Titel */
+.highlight-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+/* Text */
+.highlight-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 0.3rem 0;
+}
+
+/* Rückseite umdrehen */
+.back {
+  transform: rotateY(180deg);
   justify-content: center;
 }
-.highlight-card {
-  background: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 10px;
-  max-width: 300px;
-  flex: 1 1 250px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+/* Badge-Styling */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
 }
-.highlight-card h3 {
-  color: var(--accent);
-  margin-bottom: 0.5rem;
+
+.badge {
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
-.highlight-card p {
-  color: var(--text-muted);
-  font-size: 0.95rem;
+
+/* Responsive Anpassung */
+@media (max-width: 600px) {
+  .funfact-grid {
+    padding: 1rem 1.5rem;
+  }
+
+  .card-container {
+    height: 440px;
+  }
 }
 
 /* Footer */

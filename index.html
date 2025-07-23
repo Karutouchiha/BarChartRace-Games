@@ -7,6 +7,14 @@
     <link href="styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <nav class="sticky-nav">
+      <a href="#kapitel1-section">1980–1990</a>
+      <a href="#kapitel2-section">1990–2000</a>
+      <a href="#kapitel3-section">2000–2010</a>
+      <a href="#kapitel4-section">2010–2016</a>
+      <a href="#fun-facts">Fun Facts</a>
+    </nav>
+
 
     <!-- INTRO SCREEN -->
     <section class="intro">
@@ -143,57 +151,82 @@
 
     <!-- FUN FACTS -->
     <section class="highlights" id="fun-facts">
-      <h2
-        style="
-          width: 100%;
-          text-align: center;
-          margin-bottom: 2rem;
-          color: var(--accent);
-          font-size: 2rem;
-        "
-      >
-        3 Fun Facts
-      </h2>
+  <h2 class="section-title">🎯 3 Fun Facts</h2>
 
-      <article class="highlight-card">
-        <img
-          src="assets/wii_sports.jpg"
-          alt="Wii Sports Cover"
-          style="width: 100%; border-radius: 8px; margin-bottom: 1rem"
-        />
-        <h3>Wii Sports</h3>
-        <p>
-          Wii Sports kam 2006 auf den Markt und gilt als eines der einflussreichsten Spiele des
-          21. Jahrhunderts. Es wurde über 82,7 Millionen Mal verkauft...
-        </p>
-      </article>
+  <div class="funfact-grid">
+    <!-- Wii Sports -->
+    <div class="card-container">
+      <div class="card-flip">
+        <div class="front highlight-card">
+          <img src="assets/wii_sports.jpg" alt="Wii Sports Cover" />
+          <h3>🎮 Wii Sports</h3>
+          <div class="badges">
+            <span class="badge">📅 2006</span>
+            <span class="badge">🏷 Sports</span>
+            <span class="badge">💰 82.7M</span>
+          </div>
+          <p>
+            Ein Spiel, das ganze Generationen bewegte – wortwörtlich. Bewegungssteuerung und Familienfaktor machten es zum Bestseller.
+          </p>
+        </div>
+        <div class="back highlight-card">
+          <h3>ℹ️ Plattform: Wii</h3>
+          <p>⭐ Bewertung: 76/100</p>
+          <p>👨‍👩‍👧‍👦 Zielgruppe: Alle Altersklassen</p>
+          <p>📈 Marktanteil: ~47% aller Wii-Besitzer</p>
+        </div>
+      </div>
+    </div>
 
-      <article class="highlight-card">
-        <img
-          src="assets/gta_v.png"
-          alt="GTA V Cover"
-          style="width: 100%; border-radius: 8px; margin-bottom: 1rem"
-        />
-        <h3>Grand Theft Auto V</h3>
-        <p>
-          Grand Theft Auto V erschien 2013 und setzte bereits in den ersten drei Tagen über 1
-          Milliarde US-Dollar um...
-        </p>
-      </article>
+    <!-- GTA V -->
+    <div class="card-container">
+      <div class="card-flip">
+        <div class="front highlight-card">
+          <img src="assets/gta_v.png" alt="GTA V Cover" />
+          <h3>🚓 GTA V</h3>
+          <div class="badges">
+            <span class="badge">📅 2013</span>
+            <span class="badge">🏷 Action</span>
+            <span class="badge">💰 >180M</span>
+          </div>
+          <p>
+            Das schnellstverkaufte Entertainment-Produkt aller Zeiten – $1 Mrd. in 3 Tagen.
+          </p>
+        </div>
+        <div class="back highlight-card">
+          <h3>🌍 Plattform: Multi</h3>
+          <p>⭐ Bewertung: 97/100</p>
+          <p>🔫 Genre: Open-World / Action</p>
+          <p>💡 Online-Modus lebt bis heute</p>
+        </div>
+      </div>
+    </div>
 
-      <article class="highlight-card">
-        <img
-          src="assets/super_mario_bros.png"
-          alt="Super Mario Bros Cover"
-          style="width: 100%; border-radius: 8px; margin-bottom: 1rem"
-        />
-        <h3>Super Mario Bros.</h3>
-        <p>
-          Super Mario Bros. erschien 1985 als erster richtiger Side-Scroller und verkaufte sich
-          seither über 45,3 Millionen Mal...
-        </p>
-      </article>
-    </section>
+    <!-- Super Mario Bros -->
+    <div class="card-container">
+      <div class="card-flip">
+        <div class="front highlight-card">
+          <img src="assets/super_mario_bros.png" alt="Super Mario Bros Cover" />
+          <h3>🍄 Super Mario Bros.</h3>
+          <div class="badges">
+            <span class="badge">📅 1985</span>
+            <span class="badge">🏷 Jump'n'Run</span>
+            <span class="badge">💰 45.3M</span>
+          </div>
+          <p>
+            Das Spiel, das Nintendo zur Ikone machte. Wegbereiter für das gesamte Jump’n’Run-Genre.
+          </p>
+        </div>
+        <div class="back highlight-card">
+          <h3>🕹 Plattform: NES</h3>
+          <p>⭐ Bewertung: 84/100</p>
+          <p>🎮 Einfluss: Gigantisch</p>
+          <p>🏅 Legende der Gaming-Geschichte</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- FOOTER -->
     <footer>
