@@ -11,3 +11,18 @@ export const setState = (k, v) => {
   state[k] = v;
   document.dispatchEvent(new CustomEvent('statechange', { detail: { k, v } }));
 };
+
+const listeners = {};
+
+export const subscribe = (key, callback) => {
+  if (!listeners[key]) listeners[key] = [];
+  listeners[key].push(callback);
+};
+
+// Ergänze `dispatchEvent`-Handler:
+document.addEventListener('statechange', e => {
+  const { k, v } = e.detail;
+  if (listeners[k]) {
+    for (const cb of listeners[k]) cb(v);
+  }
+});

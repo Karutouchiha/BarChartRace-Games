@@ -38,26 +38,29 @@ d3.csv('./data/vgsales.csv', d3.autoType).then(raw => {
     )
   };
 
+  // ✅ Kapitel 1: Nur mit Slider steuerbar
   initBarChartRace('#chart-bar-race', {
-  dataset: state.data.byYearGenre,
-  yearRange: [1980, 1990],
-  label: 'Genre',
-  controlled: true
-});
+    dataset: state.data.byYearGenre,
+    label: 'Genre'
+  });
 
+  // ✅ Kapitel 2: Nur mit Slider steuerbar
   initStackedArea('#chart-stacked-area');
+
+  // Kapitel 3: animiert
   initBarChartRace('#chart-3d-era', {
     dataset: state.data.by2000sGenre,
     yearRange: [2000, 2010]
   });
 
-  // NEU: Kapitel 4 BarChart mit Plattformen
+  // Kapitel 4: animiert
   initBarChartRace('#chart-modern-era', {
     dataset: state.data.byModernPlatform,
     yearRange: [2010, 2016],
     label: 'Plattform'
   });
 
+  // Slider für Kapitel 1 + 2
   const sliderYear = document.getElementById('slider-year');
   const yearLabel = document.getElementById('yearLabel');
   if (sliderYear && yearLabel) {
@@ -67,6 +70,7 @@ d3.csv('./data/vgsales.csv', d3.autoType).then(raw => {
     });
   }
 
+  // Region-Filter für stacked area chart
   document.querySelectorAll('[data-region]').forEach(cb =>
     cb.addEventListener('change', e => {
       state.regions[e.target.dataset.region] = e.target.checked;

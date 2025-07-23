@@ -1,6 +1,4 @@
-
-// barChartRace.js
-import { state } from './state.js';
+import { state, subscribe } from './state.js';
 
 export function initBarChartRace(selector, options = {}) {
   let yearLabelText;
@@ -13,7 +11,7 @@ export function initBarChartRace(selector, options = {}) {
   const {
     dataset = state.data.byYearGenre,
     yearRange = null,
-    label = 'Genre' // NEU: für Plattformen oder Genres
+    label = 'Genre'
   } = options;
 
   const svgWidth = 600;
@@ -24,12 +22,15 @@ export function initBarChartRace(selector, options = {}) {
   const svg = container
     .append('svg')
     .attr('width', svgWidth)
-    .attr('height', svgHeight);
+    .attr('height', svgHeight)
+    .style('background', 'transparent');
 
   const translateX = (svgWidth - graphWidth) / 2;
   const translateY = (svgHeight - graphHeight - 20);
 
-  const g = svg.append('g').attr('transform', `translate(${translateX},${translateY})`);
+  const g = svg.append('g')
+    .attr('transform', `translate(${translateX},${translateY})`);
+
   const x = d3.scaleLinear().range([0, graphWidth]);
   const y = d3.scaleBand().range([0, graphHeight]).padding(0.15);
   const color = d3.scaleOrdinal(d3.schemeTableau10);
@@ -79,56 +80,60 @@ export function initBarChartRace(selector, options = {}) {
           .attr('y', d => y(d.key) + y.bandwidth() / 2)
           .text(d => d.Sales.toFixed(1) + ' Mio')
       );
-  }
-if (yearRange) {
-  let [start, end] = yearRange;
-  let current = start;
 
-  yearLabelText = svg.append("text")
-    .attr("x", svgWidth / 2)
-    .attr("y", 70)
-    .attr("text-anchor", "middle")
-    .attr("font-size", 40)
-    .attr("fill", "#ffffff");
-
-  function startAnimation() {
-    if (replayButton) replayButton.remove(); // Entferne alten Button
-
-    current = start;
-    animationInterval = d3.interval(() => {
-      draw(current);
-      yearLabelText.text(current);
-
-      current++;
-      if (current > end) {
-        animationInterval.stop();
-        showReplayButton();
-      }
-    }, 1500);
+    if (yearLabelText) yearLabelText.text(year);
   }
 
-  function showReplayButton() {
-    replayButton = container.append("button")
-      .text("↻ Replay")
-      .attr("class", "replay-button")
-      .style("position", "absolute")
-      .style("top", "10px")
-      .style("right", "20px")
-      .style("padding", "8px 14px")
-      .style("font-size", "16px")
-      .style("cursor", "pointer")
-      .style("background", "#444")
-      .style("color", "white")
-      .style("border", "1px solid #888")
-      .style("border-radius", "5px")
-      .on("click", () => {
-        startAnimation();
-      });
+  if (yearRange) {
+    let [start, end] = yearRange;
+    let current = start;
+
+    yearLabelText = svg.append("text")
+      .attr("x", svgWidth / 2)
+      .attr("y", 70)
+      .attr("text-anchor", "middle")
+      .attr("font-size", 40)
+      .attr("fill", "#ffffff");
+
+    function startAnimation() {
+      if (replayButton) replayButton.remove();
+
+      current = start;
+      animationInterval = d3.interval(() => {
+        draw(current);
+        current++;
+        if (current > end) {
+          animationInterval.stop();
+          showReplayButton();
+        }
+      }, 1500);
+    }
+
+    function showReplayButton() {
+      replayButton = container.append("button")
+        .text("↻ Replay")
+        .attr("class", "replay-button")
+        .style("position", "absolute")
+        .style("top", "10px")
+        .style("right", "20px")
+        .style("padding", "8px 14px")
+        .style("font-size", "16px")
+        .style("cursor", "pointer")
+        .style("background", "#444")
+        .style("color", "white")
+        .style("border", "1px solid #888")
+        .style("border-radius", "5px")
+        .on("click", () => {
+          startAnimation();
+        });
+    }
+
+    startAnimation();
+  } else {
+    // Ohne Animation – wird durch globalen Year-State gesteuert (Kapitel 1 und 2)
+    subscribe('year', draw);
+    draw(state.year);
   }
-
-  startAnimation();
-}
-
 
   drawGraphInfo();
 
