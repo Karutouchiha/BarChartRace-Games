@@ -151,7 +151,6 @@ footer a:hover {
   position: relative;
 }
 
-/* Optional: Styling für den Button, damit er immer rechts oben erscheint */
 .replay-button {
   position: absolute;
   top: 10px;

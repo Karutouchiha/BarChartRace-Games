@@ -130,7 +130,7 @@ export function initBarChartRace(selector, options = {}) {
 
     startAnimation();
   } else {
-    // Ohne Animation – wird durch globalen Year-State gesteuert (Kapitel 1 und 2)
+   
     subscribe('year', draw);
     draw(state.year);
   }
@@ -138,44 +138,51 @@ export function initBarChartRace(selector, options = {}) {
   drawGraphInfo();
 
   function drawGraphInfo() {
+  // Titel
     svg.append("text")
       .attr("x", svgWidth / 2)
       .attr("y", 30)
       .attr("text-anchor", "middle")
-      .style("font-size", "20px")
+      .style("font-size", "22px")
       .style("fill", "white")
+      .style("font-weight", "bold")
       .text(label === 'Plattform' ? "Beliebteste Plattformen" : "Beliebteste Video Genre");
 
+    // Y-Achsenlabel (links)
     svg.append("text")
-      .attr("text-anchor", "left")
-      .attr("x", 0)
-      .attr("y", svgHeight - graphWidth / 2)
-      .style("font-size", "18px")
+      .attr("text-anchor", "middle")
+      .attr("transform", `rotate(-90)`)
+      .attr("x", -svgHeight / 2)
+      .attr("y", 20)
+      .style("font-size", "16px")
       .style("fill", "white")
       .text(label);
 
+    // X-Achsenbeschreibung unter Balken
     svg.append("text")
       .attr("text-anchor", "middle")
       .attr("x", svgWidth / 2)
-      .attr("y", translateY / 1.5)
-      .style("font-size", "18px")
+      .attr("y", svgHeight - 100)
+      .style("font-size", "16px")
       .style("fill", "white")
-      .text("Verkaufszahlen");
+      .text("Verkaufszahlen (in Mio)");
 
+    // Quellen
     svg.append("text")
       .attr("text-anchor", "end")
-      .attr("x", svgWidth)
-      .attr("y", svgHeight - 35)
+      .attr("x", svgWidth - 10)
+      .attr("y", svgHeight - 30)
       .style("font-size", "10px")
       .style("fill", "grey")
       .text("Datenquelle: Kaggle");
 
     svg.append("text")
       .attr("text-anchor", "end")
-      .attr("x", svgWidth)
-      .attr("y", svgHeight - 50)
+      .attr("x", svgWidth - 10)
+      .attr("y", svgHeight - 45)
       .style("font-size", "10px")
       .style("fill", "grey")
       .text("Grafik: Haböck Sarah");
   }
+
 }

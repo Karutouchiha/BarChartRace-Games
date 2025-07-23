@@ -1,4 +1,4 @@
-// main.js
+
 import { state, setState } from './state.js';
 import { initBarChartRace } from './barChartRace.js';
 import { initStackedArea } from './stackedArea.js';
@@ -29,7 +29,7 @@ d3.csv('./data/vgsales.csv', d3.autoType).then(raw => {
       d => d.Genre
     ),
 
-    // NEU für Kapitel 4: Plattformen 2010–2016
+ 
     byModernPlatform: d3.rollup(
       raw.filter(d => d.Year >= 2010 && d.Year <= 2016),
       v => d3.sum(v, d => d.Global_Sales),
